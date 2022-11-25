@@ -1,4 +1,4 @@
-FROM 18-alpine
+FROM 18-alpine3.15
 
 WORKDIR /app
 
