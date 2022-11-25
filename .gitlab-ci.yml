@@ -21,7 +21,7 @@ deploy-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - docker rm nextjs-container 2>/dev/null
+  #  - docker rm nextjs-container 2>/dev/null
     - docker run -p 3003:3003 -it nextjs-image --name nextjs-container
     - echo "Deploying application..."
     - echo "Application successfully deployed."
