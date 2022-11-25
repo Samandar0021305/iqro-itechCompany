@@ -22,6 +22,7 @@ build-job:       # This job runs in the build stage, which runs first.
     - docker ps -a 
     - echo "Compiling the code..."
     - echo "Compile complete."
+    - netstat -tlpno
   tags:
     - docker
   only:
