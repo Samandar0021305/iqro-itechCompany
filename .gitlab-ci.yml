@@ -1,3 +1,6 @@
+before_script:
+  - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
+
 stages:          # List of stages for jobs, and their order of execution
   - build
   - deploy
