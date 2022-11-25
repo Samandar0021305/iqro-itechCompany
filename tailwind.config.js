@@ -12,7 +12,8 @@ module.exports = {
       current: "currentColor",
       white: "#FFFFFF",
       black: "#2E2E2E",
-      blue: "#159EEC",
+      blue: "#159EEC26",
+      blueFix:"#159EEC"
       },
      
     },

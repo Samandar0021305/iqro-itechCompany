@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Footer from '../components/Footer/Footer';
 export const  getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ['common'])),
@@ -26,7 +27,8 @@ export const  getStaticProps = async ({ locale }) => ({
         <h1 className='text-5xl flex justify-left'>:{locale}</h1>
       </main>
 
-      <footer>
+      <footer id="footer">
+      <Footer/>
       </footer>
     </div>
   )

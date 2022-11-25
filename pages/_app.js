@@ -12,7 +12,6 @@ function MyApp({ Component, pageProps }) {
   </Head>
   <Headers/>
   <Component {...pageProps} />
-  <Footer/>
   </>
 }
 

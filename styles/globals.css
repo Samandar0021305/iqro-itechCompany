@@ -4,3 +4,8 @@
 body{
     font-family: 'Ubuntu', sans-serif;
 }
+@media (max-width:500px) {
+    .container{
+        padding: 0 10px;
+    }
+}
