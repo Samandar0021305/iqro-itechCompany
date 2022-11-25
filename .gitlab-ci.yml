@@ -8,7 +8,8 @@ services:
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
-    - docker build -t nextjs-docker .
+    - docker rmi nextjs-image
+    - docker build -t nextjs-image .
     - echo "Compiling the code..."
     - echo "Compile complete."
 
@@ -16,6 +17,7 @@ deploy-job:      # This job runs in the deploy stage.
   stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
   environment: production
   script:
-    - docker run -p 3003:3003 nextjs-docker
+    - docker rm nextjs-container
+    - docker run -p 3003:3003 -it nextjs-image --name nextjs-container
     - echo "Deploying application..."
     - echo "Application successfully deployed."
