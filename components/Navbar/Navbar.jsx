@@ -1,11 +1,16 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import NavLogo from '../../assets/navbar-logo.svg';
 import Image from 'next/image';
 
 function Navbar() {
-
+  const [hidden,sethidden] = useState('hidden')
+  const classes = `${hidden} bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center`
+  const toogle = ()=>{
+    hidden == 'hidden' ? sethidden('none') : (sethidden('hidden'))
+}  
+  
   const background = {
     background:'#159EEC',
     display:'flex',
@@ -64,16 +69,31 @@ function Navbar() {
           </ul>
 
           </div>
-          <div id="hamburger" className="space-y-1 lg:hidden cursor-pointer z-20">
+          <div id="hamburger" onClick={toogle} className="space-y-1 lg:hidden cursor-pointer z-20">
             <div className="w-6 h-0.5 bg-black"></div>
             <div className="w-6 h-0.5 bg-black"></div>
             <div className="w-6 h-0.5 bg-black"></div>
           </div>
-          <ul
-            id="menu"
-            className="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
-          >
+          <ul   className={classes}  >
+              <li>
+              <a href="#">Direction</a>
+            </li>
+            <li >
+              <a href="#about">Command</a>
+            </li>
+            <li >
+              <a href="#services">Services</a>
+            </li>
+            <li >
+              <a href="#works">Tools</a>
+            </li>
             <li>
+              <a href="#contact">Clients</a>
+            </li>
+            <li>
+              <a href="#contact">Portfolio</a>
+            </li>  
+            {/* <li>
               <a id="hLink" href="#">homepage</a>
             </li>
             <li>
@@ -87,7 +107,7 @@ function Navbar() {
             </li>
             <li>
               <a id="hLink" href="#contact">contact</a>
-            </li>
+            </li> */}
           </ul>
         </div>
       
