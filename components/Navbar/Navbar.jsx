@@ -4,6 +4,15 @@ import { useRouter } from "next/router";
 import NavLogo from '../../assets/navbar-logo.svg';
 import Image from 'next/image';
 
+
+// import { useTranslation } from "next-i18next";
+// import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+// export const  getStaticProps = async ({ locale }) => ({
+//   props: {
+//     ...(await serverSideTranslations(locale, ['common'])),
+//   },
+// })
+
 function Navbar() {
   const [hidden,sethidden] = useState('hidden')
   const classes = `${hidden} bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center`
@@ -20,16 +29,19 @@ function Navbar() {
     height:'30px'
   }
     const router = useRouter();
-    const t = useTranslation()
+    // const t = useTranslation()
     const handleLocaleChange = (event) => {
     const value = event.target.value ;
     router.push(router.route, router.asPath, {
       locale: value,
     });
   };  
+  const {locale} = router;
+  const {t} = useTranslation("common");
+  
   return (
 
-        <nav className=" navbar w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <nav className="w-full  top-0 bg-white z-10 dark:bg-slate-900">
         <div className="container mx-auto py-5 flex items-center justify-between">
           <div className="flex items-center gap-2 cursor-pointer">
               <Image  src={NavLogo}   width='151' height='28' alt='navbar logo'  />
@@ -39,22 +51,22 @@ function Navbar() {
             className="flex space-x-10 items-center text-gray-600 dark:text-gray-100 mt-0.5 font-400  font-normal text-sm capitalize"
           >
             <li className="hover:text-gray-500 lg:flex hidden">
-              <a href="#">Direction</a>
+              <a href="#">{t('Direction')}</a>
             </li>
             <li className="hover:text-gray-500 lg:flex hidden">
-              <a href="#about">Command</a>
+              <a href="#about">{t('Command')}</a>
             </li>
             <li className="hover:text-gray-500 lg:flex hidden">
-              <a href="#services">Services</a>
+              <a href="#services">{t('Services')}</a>
             </li>
             <li className="hover:text-gray-500 lg:flex hidden">
-              <a href="#works">Tools</a>
+              <a href="#works">{t('Tools')}</a>
             </li>
             <li class="hover:text-gray-500 lg:flex hidden">
-              <a href="#contact">Clients</a>
+              <a href="#contact">{t('Clients')}</a>
             </li>
             <li class="hover:text-gray-500 lg:flex hidden">
-              <a href="#contact">Portfolio</a>
+              <a href="#contact">{t('Portfolio')}</a>
             </li>  
        <li>
        <select onChange={handleLocaleChange}  className='text-gray-600    ' value={router.locale}>
@@ -93,26 +105,8 @@ function Navbar() {
             <li>
               <a href="#contact">Portfolio</a>
             </li>  
-            {/* <li>
-              <a id="hLink" href="#">homepage</a>
-            </li>
-            <li>
-              <a id="hLink" href="#about">about me</a>
-            </li>
-            <li>
-              <a id="hLink" href="#services">services</a>
-            </li>
-            <li>
-              <a id="hLink" href="#works">works</a>
-            </li>
-            <li>
-              <a id="hLink" href="#contact">contact</a>
-            </li> */}
           </ul>
         </div>
-      
-
-
     </nav>
   )
 }

@@ -1,3 +1,9 @@
 {
-          "hello": "Ga Xush kelibsiz"
+          "hello": "Ga Xush kelibsiz",
+          "Direction":"Yo'nalish",
+          "Command":"Buyruq",
+          "Services":"Xizmatlar",
+          "Tools":"Asboblar",
+          "Clients":"Mijozlar",
+          "Portfolio":"Portfolio"
 }

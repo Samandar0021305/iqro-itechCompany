@@ -1,3 +1,9 @@
 {
-          "hello": "Welcome to"
+      "hello":"welcome to",
+          "Direction":"Direction",
+          "Command":"Command",
+          "Services":"Services",
+          "Tools":"Tools",
+          "Clients":"Clients",
+          "Portfolio":"Portfolio"
 }
