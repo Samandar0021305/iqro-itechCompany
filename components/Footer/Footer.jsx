@@ -20,16 +20,7 @@ export const getStaticProps = async ({ locale }) => ({
 const list = ["facebook", "instagram", "twwitter", "youTube"];
 function Footer() {
   const [imageList, setImageList] = useState([Fac, Youteb, Twwiter, InstataGram])
-  const { locale } = useRouter()
 
-  const router = useRouter();
-
-  const handleLocaleChange = (event) => {
-    const value = event.target.value;
-    router.push(router.route, router.asPath, {
-      locale: value,
-    });
-  };
   const { t } = useTranslation("common");
 
 
@@ -43,13 +34,13 @@ function Footer() {
           <Image src={FooterLogo} width='151' height='28' alt='navbar logo' />
         </span>
 
-        <div className='flex md:items-start md:justify-between flex-wrap mt-10 justify-center items-center'>
+        <div className='flex items-start justify-between flex-wrap mt-10 pl-5'>
           <div className='col-span-6  justify-center items-center    mt-4'>
-            <h2 className='font-bold mb-3 text-2xl'>{t("About_Us")}</h2>
-            <ul className='flex flex-col  w-96'>
+            <h2 className='font-bold mb-3 md:text-2xl text-base'>{t("About_Us")}</h2>
+            <ul className='flex flex-col md:w-96  w-auto '>
               {
-                navTextList.map((post, id) => (<li key={id} className='text-blueFix'>
-                  <a href={post.key}>{t(post.text)}</a>
+                navTextList.map((post, id) => (<li key={id} className='text-blueFix md:text-base text-xs'>
+                  <a key={id} href={post.key}>{t(post.text)}</a>
                 </li>))
               }
             </ul>
@@ -57,12 +48,12 @@ function Footer() {
           </div>
 
           <div className='col-span-6  mt-4'>
-            <h2 className='font-bold mb-3 text-2xl'>{t('Services')}</h2>
-            <ul className='w-96 '>
+            <h2 className='font-bold mb-3 text-sm md:text-2xl '>{t('Services')}</h2>
+            <ul className='md:w-96  w-auto'>
               {
                 footOne.map((pos, id) =><>
-                <li key={id} className='text-blueFix  sm:text-base'>
-                  <a className='sm:text-base' href={pos.key}>
+                <li key={id} className='text-blueFix break-words w-auto md:text-base text-xs '>
+                  <a key={id} className='sm:text-base break-words' href={pos.key}>
                     {t(pos.text)}
                   </a>
                 </li>
@@ -73,14 +64,14 @@ function Footer() {
           </div>
 
           <div className='col-span-6 mt-4'>
-            <h2 className='font-bold mb-3 text-1'>{t('Portfolio')}</h2>
-            <ul className='w-full'>
-              <li className='text-blueFix'>
+            <h2 className='font-bold mb-3 text-sm md:text-2xl'>{t('Portfolio')}</h2>
+            <ul>
+              <li className='text-blueFix md:text-base text-sm'>
                 <a href="">
                  {t('Barber_shop')}
                 </a>
               </li>
-              <li className='text-blueFix'>
+              <li className='text-blueFix md:text-base text-xs'>
                 <a href="">
                   {t('Landing_page')}
                 </a>
@@ -90,9 +81,9 @@ function Footer() {
         </div>
 
         <span className='flex w-full bg-blueFix  h-0.5 mt-9'></span>
-        <div className='flex justify-between items-center'>
+        <div className='flex md:justify-between  md:items-center flex-wrap-reverse items-center justify-center'>
           <div className='col-span-6 mt-3'>
-            <h3 className='text-blueFix'>© 2022 “Iqro Agency” LTD. All rights reserved</h3>
+            <h3 className='text-blueFix text-center '>© 2022 “Iqro Agency” LTD. All rights reserved</h3>
           </div>
           <div className='col-span-6 mt-3'>
             <ul className='flex  items-center'>
@@ -100,7 +91,7 @@ function Footer() {
                 imageList.map((img, index) => {
                   return <>
                     <li className='ml-1 cursor-pointer ' key={index}>
-                      <Images url={img} />
+                      <Images key={index} url={img} />
                     </li>
                   </>
                 })

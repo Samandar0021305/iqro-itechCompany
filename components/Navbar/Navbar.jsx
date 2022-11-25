@@ -39,7 +39,7 @@ function Navbar() {
   return (
 
     <nav className="w-full mt-2 top-0 bg-white z-10 dark:bg-slate-900">
-      <div className="container sm:pl-2 sm:pr-2 mx-auto py-5 flex items-center md:justify-between justify-center">
+      <div className="container sm:pl-2 sm:pr-2 pr-2 pl-2 mx-auto py-5 flex items-center md:justify-between justify-center">
         <div className="flex items-center gap-2 cursor-pointer">
           <Image src={NavLogo} width='151' height='28' alt='navbar logo' />
         </div>
@@ -51,7 +51,7 @@ function Navbar() {
               navTextList.map((post, index) => {
                 return <>
                   <li className='hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden ' key={post.key}>
-                    <a href={post.key}>{t(post.text)}</a>
+                    <a key={post} href={post.key}>{t(post.text)}</a>
                   </li>
                 </>
               })
