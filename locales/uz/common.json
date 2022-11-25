@@ -7,5 +7,12 @@
           "Clients":"Mijozlar",
           "Portfolio":"Portfolio",
           "About_Us":"Biz haqimizda",
-          "IT_consulting":"IT konsalting";
+          "IT_consulting":"IT konsalting",
+          "Development_of":"Mobil ilovalarni ishlab chiqish",
+          "Development_implementation":"ERP tizimlarini ishlab chiqish va joriy etish",
+          "User_interface":"Foydalanuvchi interfeysi, foydalanuvchi tajribasi dizayni",
+          "Business_It":"Biznes va IT infratuzilmasini optimallashtirish va avtomatlashtirish",
+          "Information_technology":"Axborot texnologiyalari ta'lim markazi",
+          "Barber_shop":" Sartaroshxona",
+          "Landing_page":"Ochilish sahifasi"
 }

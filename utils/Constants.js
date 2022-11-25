@@ -24,30 +24,30 @@ export  const NavbarList = [{
 },]
 
 export const FooterList = [{
-    text:'IT consulting',
+    text:'IT_consulting',
     key:""
   },
   
   {
-    text:'Development of mobile applications',
+    text:'Development_of',
     key:""
   },
   
   {
-    text:'Development and implementation ERP systems',
+    text:'Development_implementation',
     key:""
   },
   {
-    text:'User interface, User experience design',
+    text:'User_interface',
     key:""
   },
   
   {
-    text:'Business and IT Infrastructure Optimization and Automation',
+    text:'Business_It',
     key:""
   },
   {
-    text:'Information technology Education center',
+    text:'Information_technology',
     key:""
   },
   ]

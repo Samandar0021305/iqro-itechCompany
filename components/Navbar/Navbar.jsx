@@ -75,8 +75,7 @@ function Navbar() {
           <div className="w-6 h-0.5 bg-black"></div>
           <div className="w-6 h-0.5 bg-black"></div>
         </div>
-        <ul className={classes}  >
-
+        <ul className={classes}>
           {
             navTextList.map((post, id) => {
               return <>

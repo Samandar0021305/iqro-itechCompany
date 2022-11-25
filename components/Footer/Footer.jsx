@@ -57,13 +57,13 @@ function Footer() {
           </div>
 
           <div className='col-span-6  mt-4'>
-            <h2 className='font-bold mb-3 text-2xl'>Services</h2>
+            <h2 className='font-bold mb-3 text-2xl'>{t('Services')}</h2>
             <ul className='w-96 '>
               {
                 footOne.map((pos, id) =><>
                 <li key={id} className='text-blueFix  sm:text-base'>
                   <a className='sm:text-base' href={pos.key}>
-                    {pos.text}
+                    {t(pos.text)}
                   </a>
                 </li>
                 </>)
@@ -73,16 +73,16 @@ function Footer() {
           </div>
 
           <div className='col-span-6 mt-4'>
-            <h2 className='font-bold mb-3 text-1'>Portfolio</h2>
+            <h2 className='font-bold mb-3 text-1'>{t('Portfolio')}</h2>
             <ul className='w-full'>
               <li className='text-blueFix'>
                 <a href="">
-                  Barber shop
+                 {t('Barber_shop')}
                 </a>
               </li>
               <li className='text-blueFix'>
                 <a href="">
-                  Landing page
+                  {t('Landing_page')}
                 </a>
               </li>
             </ul>

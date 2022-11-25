@@ -7,5 +7,12 @@
           "Clients":"Клиенты",
           "Portfolio":"портфолио",
           "About_Us":"О нас",
-          "IT_consulting":""
+          "IT_consulting":"ИТ консалтинг",
+          "Development_of":"Разработка мобильных приложений",
+          "Development_implementation":"Разработка и внедрение ERP-систем",
+          "User_interface":"Пользовательский интерфейс, Дизайн пользовательского опыта",
+          "Business_It":"Оптимизация и автоматизация бизнеса и ИТ-инфраструктуры",
+          "Information_technology":"Образовательный центр информационных технологий",
+          "Barber_shop":" Barber shop",
+          "Landing_page":"Целевая страница"
 }
