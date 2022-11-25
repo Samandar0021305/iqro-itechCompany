@@ -13,6 +13,8 @@ build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
   #  - docker rmi nextjs-image 2>/dev/null
+    - docker images prune
+    - docker container prune
     - docker build -t nextjs-image .
     - docker run -d -p 3003:3003  --name nextjs-container --rm nextjs-image 
     - docker images -a
