@@ -3,7 +3,11 @@ import { useTranslation } from "next-i18next";
 import { useRouter } from "next/router";
 import NavLogo from '../../assets/navbar-logo.svg';
 import Image from 'next/image';
-
+export const  getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ['common'])),
+  },
+})
 function Navbar() {
   const [hidden,sethidden] = useState('hidden')
   const classes = `${hidden} bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center`
@@ -20,15 +24,14 @@ function Navbar() {
     height:'30px'
   }
     const router = useRouter();
-    // const t = useTranslation()
+    
     const handleLocaleChange = (event) => {
     const value = event.target.value ;
     router.push(router.route, router.asPath, {
       locale: value,
     });
   };  
-  const {locale} = router;
-  const {t} = useTranslation("common");
+    const {t} = useTranslation("common");
   
   return (
 
@@ -63,7 +66,7 @@ function Navbar() {
        <select onChange={handleLocaleChange}  className='text-gray-600    ' value={router.locale}>
               <option value="en">Eng</option>
               <option value="uz">UZB</option>
-              <option value="ru">RUSS</option>
+              <option value="ru">RUS</option>
             </select>
        </li>
             <li   className="hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden " >
