@@ -11,6 +11,7 @@ export const getStaticProps = async ({ locale }) => ({
     ...(await serverSideTranslations(locale, ['common'])),
   },
 })
+
 function Navbar() {
   const [hidden, sethidden] = useState('hidden')
   const classes = `${hidden} bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center`

@@ -5,5 +5,7 @@
           "Services":"Xizmatlar",
           "Tools":"Asboblar",
           "Clients":"Mijozlar",
-          "Portfolio":"Portfolio"
+          "Portfolio":"Portfolio",
+          "About_Us":"Biz haqimizda",
+          "IT_consulting":"IT konsalting";
 }
