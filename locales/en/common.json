@@ -1,3 +1,6 @@
 {
-          "hello": "Welcome to"
+  "hello": "Welcome to",
+  "home": {
+    "header": "IT-Outsourcing Agency"
+  }
 }
