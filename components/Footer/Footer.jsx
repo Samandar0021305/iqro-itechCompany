@@ -51,12 +51,12 @@ function Footer() {
             <h2 className='font-bold mb-3 text-sm md:text-2xl '>{t('Services')}</h2>
             <ul className='md:w-96  w-auto'>
               {
-                footOne.map((pos, id) =><>
-                <li key={id} className='text-blueFix break-words w-auto md:text-base text-xs '>
-                  <a key={id} className='sm:text-base break-words' href={pos.key}>
-                    {t(pos.text)}
-                  </a>
-                </li>
+                footOne.map((pos, id) => <>
+                  <li key={id} className='text-blueFix break-words w-auto md:text-base text-xs '>
+                    <a key={id} className='sm:text-base break-words' href={pos.key}>
+                      {t(pos.text)}
+                    </a>
+                  </li>
                 </>)
               }
 
@@ -68,7 +68,7 @@ function Footer() {
             <ul>
               <li className='text-blueFix md:text-base text-sm'>
                 <a href="">
-                 {t('Barber_shop')}
+                  {t('Barber_shop')}
                 </a>
               </li>
               <li className='text-blueFix md:text-base text-xs'>
