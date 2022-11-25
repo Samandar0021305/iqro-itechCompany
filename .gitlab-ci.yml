@@ -15,6 +15,8 @@ build-job:       # This job runs in the build stage, which runs first.
   #  - docker rmi nextjs-image 2>/dev/null
     - docker build -t nextjs-image .
     - docker run -d -p 3003:3003  --name nextjs-container --rm nextjs-image 
+    - docker images -a
+    - docker ps -a 
     - echo "Compiling the code..."
     - echo "Compile complete."
   tags:
@@ -28,7 +30,6 @@ deploy-job:      # This job runs in the deploy stage.
   #  - docker rm nextjs-container 2>/dev/null
     - docker images -a
     - docker ps -a 
-    - docker run -d -p 3003:3003  --name nextjs-container  nextjs-image 
     - echo "Deploying application..."
     - echo "Application successfully deployed."
   tags:
