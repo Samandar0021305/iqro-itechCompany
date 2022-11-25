@@ -1,10 +1,11 @@
-FROM node:16.7-alpine
+FROM 18-alpine
 
 WORKDIR /app
 
 COPY package*.json ./
 
 RUN yarn install
+
 
 COPY . .
 
