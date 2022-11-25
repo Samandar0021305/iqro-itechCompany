@@ -3,8 +3,8 @@ stages:          # List of stages for jobs, and their order of execution
   - deploy
 
 services:
-  - docker:dind
-
+    - docker:dind
+    
 build-job:       # This job runs in the build stage, which runs first.
   stage: build
   script:
