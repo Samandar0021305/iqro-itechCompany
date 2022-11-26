@@ -1,53 +1,53 @@
 export const NavbarList = [{
-  key: '',
+  key: 'Direction',
   text: 'Direction'
 },
 {
-  key: '',
+  key: 'Command',
   text: 'Command'
 },
 {
-  key: '',
+  key: 'Services',
   text: 'Services'
 },
 {
-  key: '',
+  key: 'Tools',
   text: 'Tools'
 },
 {
-  key: '',
+  key: 'Clients',
   text: 'Clients'
 },
 {
-  key: '',
+  key: 'Portfolio',
   text: 'Portfolio'
 },]
 
 export const FooterList = [{
   text: 'IT_consulting',
-  key: ""
+  key: "IT_consulting"
 },
 
 {
   text: 'Development_of',
-  key: ""
+  key: "Development_of"
 },
 
 {
   text: 'Development_implementation',
-  key: ""
+  key: "Development_implementation"
 },
 {
   text: 'User_interface',
-  key: ""
+  key: "User_interface"
 },
 
 {
   text: 'Business_It',
-  key: ""
+  key: "Business_It"
 },
 {
   text: 'Information_technology',
-  key: ""
+  key: "Information_technology"
 },
 ]

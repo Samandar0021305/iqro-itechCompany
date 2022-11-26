@@ -51,7 +51,7 @@ function Navbar() {
               navTextList.map((post, index) => {
                 return <>
                   <li className='hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden ' key={post.key}>
-                    <a key={post} href={post.key}>{t(post.text)}</a>
+                    <a key={index} href={post.key}>{t(post.text)}</a>
                   </li>
                 </>
               })
