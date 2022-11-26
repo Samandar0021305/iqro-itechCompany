@@ -3,7 +3,6 @@ before_script:
 
 stages:          # List of stages for jobs, and their order of execution
   - build
-  - deploy
 
 services:
     - docker:dind
@@ -27,14 +26,3 @@ build-job:       # This job runs in the build stage, which runs first.
     - docker
   only:
     - deploy
-    
-deploy-job:      # This job runs in the deploy stage.
-  image: docker:dind 
-  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
-  environment: production
-  script:
-  #  - docker rm nextjs-container 2>/dev/null
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
-  tags:
-    - docker
