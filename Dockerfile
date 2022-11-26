@@ -16,4 +16,6 @@ RUN yarn build
 
 ENTRYPOINT ["yarn"]
 
+EXPOSE 3003
+
 CMD ["serve"]
