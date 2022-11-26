@@ -4,10 +4,8 @@ import logo from "../assets/svgs/logo.svg";
 import robo from "../assets/png/homeImage.png";
 import TypedTex from "./typed";
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 
 const HomePage = () => {
-  const router = useRouter();
   const { t } = useTranslation();
   return (
     <div className="md:flex justify-center items-center text-center ">
