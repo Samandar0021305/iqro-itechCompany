@@ -2,7 +2,6 @@ before_script:
   - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
 
 stages:          # List of stages for jobs, and their order of execution
-  - build
   - deploy
 
 services:
@@ -10,14 +9,14 @@ services:
     
 build-job:       # This job runs in the build stage, which runs first.
   image: docker:dind
-  stage: build
+  stage: deploy
   script:
   #  - docker rmi nextjs-image 2>/dev/null
     - docker system prune -f
     - docker image prune --all --force
     - docker container prune
     - docker build -t nextjs-image .
-    - docker run  -p 3003:3000  --name nextjs-container  nextjs-image 
+    - docker run -d -p 3003:3000  --name nextjs-container  nextjs-image 
     - docker logs nextjs-container 
     - docker images -a
     - docker ps -a 
@@ -27,14 +26,3 @@ build-job:       # This job runs in the build stage, which runs first.
     - docker
   only:
     - deploy
-    
-deploy-job:      # This job runs in the deploy stage.
-  image: docker:dind 
-  stage: deploy  # It only runs when *both* jobs in the test stage complete successfully.
-  environment: production
-  script:
-  #  - docker rm nextjs-container 2>/dev/null
-    - echo "Deploying application..."
-    - echo "Application successfully deployed."
-  tags:
-    - docker
