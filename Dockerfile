@@ -14,9 +14,11 @@ RUN npm install --force react-i18next
 
 ENV PORT 3000
 
+RUN npm run build
+
 EXPOSE 3003
 
-CMD ["npm", "run", "start"]
+CMD ["npm", "start"]
 
 
 
