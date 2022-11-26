@@ -2,20 +2,24 @@ FROM node:18-alpine
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json ./
 
-RUN yarn install
+COPY ./ ./
 
-RUN yarn add --force react-i18next
+RUN npm i
 
-RUN yarn add --force i18next
+RUN npm install --force i18next
 
-COPY . .
+RUN npm install --force react-i18next
 
-RUN yarn build
-
-ENTRYPOINT ["yarn"]
+ENV PORT 3000
 
 EXPOSE 3003
 
-CMD [ "yarn", "start" ]
+CMD ["npm", "run", "start"]
+
+
+
+
+
+
