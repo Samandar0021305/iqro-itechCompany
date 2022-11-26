@@ -28,7 +28,7 @@ function Footer() {
   const [footOne, setFooteOne] = useState(FooterList)
 
   return (
-    <footer className='bg-blue pt-4 pb-3'>
+    <footer className='bg-blue bg-opacity-20 pt-4 pb-3'>
       <div className="container mx-auto py-5">
         <span className='w-full flex items-center justify-center'>
           <Image src={FooterLogo} width='151' height='28' alt='navbar logo' />

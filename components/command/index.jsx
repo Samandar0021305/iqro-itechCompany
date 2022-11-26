@@ -6,7 +6,7 @@ import { useTranslation } from "next-i18next";
 const Command = () => {
   const { t } = useTranslation();
   return (
-    <div className="bg-blue bg-opacity-20 mb-7 relative">
+    <div className="bg-blue bg-opacity-20 relative">
       <div className="sm:flex justify-between container mx-auto xsm:px-3">
         <div className="sm:w-2/3 xsm:py-9 sm:my-14">
           <h4 className=" xsm:text-3xl sm:text-6xl text-blue font-semibold ">

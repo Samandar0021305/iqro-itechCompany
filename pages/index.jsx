@@ -2,8 +2,8 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import HomePage from "../components/home";
-import Command from "../components/command";
+import HomePage from "../components/home/index";
+import Command from "../components/command/index";
 import Footer from '../components/Footer/Footer'
 
 export const getStaticProps = async ({ locale }) => ({
