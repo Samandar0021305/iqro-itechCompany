@@ -18,4 +18,4 @@ ENTRYPOINT ["yarn"]
 
 EXPOSE 3003
 
-CMD ["serve"]
+CMD [ "yarn", "start" ]
