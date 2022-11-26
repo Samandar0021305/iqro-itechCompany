@@ -16,7 +16,7 @@ build-job:       # This job runs in the build stage, which runs first.
     - docker image prune --all --force
     - docker container prune
     - docker build -t nextjs-image .
-    - docker run -d -p 3003:3000  --name nextjs-container  nextjs-image 
+    - docker run  -p 3003:3000  --name nextjs-container  nextjs-image 
     - docker logs nextjs-container 
     - docker images -a
     - docker ps -a 
