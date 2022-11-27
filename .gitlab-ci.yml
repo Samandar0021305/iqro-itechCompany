@@ -1,6 +1,3 @@
-before_script:
-  - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
-
 stages:          # List of stages for jobs, and their order of execution
   - deploy
 
@@ -16,7 +13,5 @@ build-job:       # This job runs in the build stage, which runs first.
     - docker run -d -p 3003:3003  --name nextjs-container  nextjs-image 
     - echo "Compiling the code..."
     - echo "Compile complete."
-  tags:
-    - docker
   only:
     - deploy
