@@ -80,7 +80,7 @@ function Footer() {
           </div>
         </div>
 
-        <span className='flex w-full bg-blueFix  h-0.5 mt-9'></span>
+        <span className='flex w-full bg-blue  h-0.5 mt-9'></span>
         <div className='flex md:justify-between  md:items-center flex-wrap-reverse items-center justify-center'>
           <div className='col-span-6 mt-3'>
             <h3 className='text-blueFix text-center '>© 2022 “Iqro Agency” LTD. All rights reserved</h3>
