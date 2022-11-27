@@ -5,6 +5,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import HomePage from "../components/home/index";
 import Command from "../components/command/index";
 import Footer from '../components/Footer/Footer'
+import OurServices from "../components/OurServices/OurServices.jsx";
+import DevelopmentMobile from "../components/DevelopmentMobile/DevelopmentMobile";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -20,7 +22,9 @@ function Home() {
       <div className="container mx-auto">
         <HomePage />
       </div>
+      <OurServices />
       <Command />
+      <DevelopmentMobile />
       <Footer/>
     </>
   );

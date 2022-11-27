@@ -13,8 +13,9 @@ export const getStaticProps = async ({ locale }) => ({
 })
 
 function Navbar() {
+  // const [toogleEl,setToogleEl] = useState(false)
   const [hidden, sethidden] = useState('hidden')
-  const classes = `${hidden} bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center`
+  const classes = `${hidden} bg-indigo absolute left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`
   const toogle = () => {
     hidden == 'hidden' ? sethidden('none') : (sethidden('hidden'))
   }
@@ -41,7 +42,7 @@ function Navbar() {
     <nav className="w-full mt-2 top-0 bg-white z-10 dark:bg-slate-900">
       <div className="container sm:pl-2 sm:pr-2 pr-2 pl-2 mx-auto py-5 flex items-center md:justify-between justify-center">
         <div className="flex items-center gap-2 cursor-pointer">
-          <Image src={NavLogo} width='151' height='28' alt='navbar logo' />
+          <Image src={NavLogo} className="lg:w-40 lg:h-14 w-24 h-5" alt='navbar logo' />
         </div>
         <div className='flex items-center sm:ml-auto sm:mr-4  ml-auto'>
           <ul
@@ -49,11 +50,11 @@ function Navbar() {
           >
             {
               navTextList.map((post, index) => {
-                return <>
-                  <li className='hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden ' key={post.key}>
-                    <a key={index} href={post.key}>{t(post.text)}</a>
+                return (
+                  <li className='hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden ' key={post.id}>
+                    <a key={post.id + 7} href={post.key}>{t(post.text)}</a>
                   </li>
-                </>
+                )
               })
             }
 
@@ -70,17 +71,17 @@ function Navbar() {
           </ul>
 
         </div>
-        <div onClick={toogle} className="space-y-1 lg:hidden cursor-pointer z-20">
-          <div className="w-6 h-0.5 bg-black"></div>
-          <div className="w-6 h-0.5 bg-black"></div>
-          <div className="w-6 h-0.5 bg-black"></div>
-        </div>
+       <div onClick={toogle} className="space-y-1 visible lg:hidden cursor-pointer z-40">
+        <div className="w-6 h-0.5 bg-black"></div>
+        <div className="w-6 h-0.5 bg-black"></div>
+        <div className="w-6 h-0.5 bg-black"></div>
+      </div>        
         <ul className={classes}>
           {
             navTextList.map((post, id) => {
-              return <>
-                <li key={id}>{t(post.text)}</li>
-              </>
+              return (
+                <li key={post.id + 15}>{t(post.text)}</li>
+              )
             })
           }
         </ul>
