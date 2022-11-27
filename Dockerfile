@@ -12,7 +12,7 @@ RUN npm install --force i18next
 
 RUN npm install --force react-i18next
 
-ENV PORT 3000
+ENV PORT 3003
 
 EXPOSE 3003
 
