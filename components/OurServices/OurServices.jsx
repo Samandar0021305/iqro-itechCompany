@@ -14,7 +14,7 @@ const OurServices = () => {
              {
               Services.map((postEl,index)=>{
                 return <li key={index} className='lg:w-96   md:mr-1 ml-1 lg:p-6 lg:h-64 md:w-64 md:h-32 sm:w-40 sm:h-32 w-36  pl-2 pr-2  h-32 mt-3 flex justify-between bg-blue bg-opacity-20'>
-                  <p className='lg:text-base lg:font-medium font-normal text-xs h-auto lg:w-40 w-24'>{t(postEl.post)}</p>
+                  <p className='lg:text-base mt-2 lg:font-medium font-normal text-xs h-auto lg:w-40 w-24'>{t(postEl.post)}</p>
                   <Image  src={postEl.img}  className="lg:w-48 lg:h-48 w-16 h-16 sm:mt-0 mt-3"  alt=""  />
                 </li>
                   
