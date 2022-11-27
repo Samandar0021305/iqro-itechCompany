@@ -8,27 +8,27 @@ import img6 from "../../assets/services6.png"
 
 export let Services = [
     {
-        post:"Development of mobile applications",
+        post:'Development_of',
         img:img1
     },
     {
-        post:"Development and implementation ERP systems",
+        post:'Development_implementation',
         img:img2
     },
     {
-        post:"User interface, User experience design",
+        post:'User_interface',
         img:img3
     },
     {
-        post:"Business and IT Infrastructure Optimization and Automation",
+        post:'Business_It',
         img:img4
     },
     {
-        post:"IT consulting",
+        post:'IT_consulting',
         img:img5
     },
     {
-        post:"Information technology Education center",
+        post:'Information_technology',
         img:img6
     },
 

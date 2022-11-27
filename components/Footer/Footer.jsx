@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import FooterLogo from '../../assets/navbar-logo.svg';
 import Image from 'next/image';
 import { useTranslation } from "next-i18next";
-import { useRouter } from "next/router";
 import Images from '../Image/Images';
 import Fac from '../../assets/facebook.png';
 import Youteb from '../../assets/youTube.png';
@@ -91,8 +90,8 @@ function Footer() {
               {
                 imageList.map((img, index) => {
                   return (
-                    <li className='ml-1 cursor-pointer ' key={index + 100}>
-                      <Images key={index+ 120} url={img} />
+                    <li className='ml-1 cursor-pointer ' key={index}>
+                      <Images url={img} />
                     </li>
                   )
                 })
