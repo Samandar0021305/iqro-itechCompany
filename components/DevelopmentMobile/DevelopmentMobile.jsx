@@ -47,7 +47,7 @@ function DevelopmentMobile() {
                       </ul>
                 </div>
                 <div className='w-[50%]'>
-                    <Image src={Img} className="lg:-mt-40 md:-mt-16  lg:object-cover ml-[50px] lg:w-[576px] lg:h-[683px]  md:w-[324px] md:h-[385px] sm:h-[380px] w-[324px] h-[265px] " alt=""/>
+                    <Image src={Img} className="lg:-mt-40 md:-mt-16  lg:object-cover ml-[50px] lg:w-[576px] lg:h-[683px]  md:w-[324px] md:h-[385px] sm:h-[380px] w-[324px] h-[245px] " alt=""/>
                 </div>
               </div>
        </div>
