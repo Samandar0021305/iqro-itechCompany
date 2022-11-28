@@ -16,7 +16,7 @@ const OurServices = () => {
                 return (
                   <li key={id} className="lg:w-[410px] p-2 lg:h-[250px] relative md:w-[220px] md:h-[135px] sm:w-[162px] sm:h-[135px] w-[152px] h-[135px] flex mt-[20px]  bg-bluef">
                     <p className='lg:text-[21px] text-[12px] w-[70%]'>{t(postEl.post)}</p> 
-                         <Image  className='block object-scale-down  absolute bottom-[0] right-0 ' src={postEl.img} alt=""  />
+                         <Image  className='block   absolute bottom-[0] right-0' src={postEl.img} alt=""  />
                   </li>
                 )
               })

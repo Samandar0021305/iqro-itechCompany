@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 import { Dev, Development } from './Constants'
-
+import { useTranslation } from "next-i18next";
 import Img from "../../assets/DevelopmentMobileBg.png"
 
 function DevelopmentMobile() {
+  const { t } = useTranslation("common");
+
   return (
     <div>
        <div className='container lg:pr-1 lg:pl-1  p-0 lg:mt-0   pr-6 pl-6 sm:pr-0 sm:pl-0 mx-auto py-5'>
@@ -14,10 +16,8 @@ function DevelopmentMobile() {
        <div className='lg:bg-blue sm:bg-blue bg-white sm:bg-opacity-20  pr-6 pl-6  lg:bg-opacity-20 mt-[30px] sm:mt-[0]  pb-[70px]'>
               <div className=' container lg:pr-1 lg:pl-1 flex justify-between  lg:flex-row  md:flex-row sm:flex-col-reverse xsm:flex-col-reverse flex-col-reverse p-0 mx-auto py-5'>
                 <div className='w-[100%] sm:w-[50%]'>
-                    <p className='lg:text-[28px] text-[16px] mt-[20px] md:mt-0 font-normal'>In collaboration with startups, we have
-                      learned how to create a creative and
-                      functional user interface for mobile
-                      applications.
+                    <p className='lg:text-[28px] text-[16px] mt-[20px] md:mt-0 font-normal'>
+                     {t('in_collabration')}
                       </p>
                       <ul className='flex justify-between items-center  mt-[30px]'>
                         {
@@ -31,7 +31,7 @@ function DevelopmentMobile() {
                           })
                         }
                       </ul>
-                      <h2 className='mt-[30px] lg:text-[38px] text-[21px]'>Technologies</h2>
+                      <h2 className='mt-[30px] lg:text-[38px] text-[21px]'>{t("Technologies")}</h2>
                       <ul className='mt-[30px] flex w-[80%] sm:w-[50%] justify-between'>
                         {
                           Dev.map((postEl,id)=>{
