@@ -8,6 +8,7 @@ import Footer from '../components/Footer/Footer'
 import OurServices from "../components/OurServices/OurServices.jsx";
 import DevelopmentMobile from "../components/DevelopmentMobile/DevelopmentMobile";
 import OurClients from "../components/OurClients/OurClients";
+import HowWork from "../components/HowWork/HowWork";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -27,6 +28,7 @@ function Home() {
       <Command />
       <DevelopmentMobile />
       <OurClients />
+      <HowWork />
       <Footer/>
     </>
   );
