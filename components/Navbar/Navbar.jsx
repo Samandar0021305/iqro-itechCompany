@@ -40,7 +40,7 @@ function Navbar() {
   return (
 
     <nav className="w-full mt-2 top-0 bg-white z-10 dark:bg-slate-900">
-      <div className="container sm:pl-2 sm:pr-2 pr-2 pl-2 mx-auto py-5 flex items-center md:justify-between justify-center">
+      <div className="container  pl-2 mx-auto py-5 flex sm:pl-2 sm:pr-2 pr-2 items-center md:justify-between justify-center">
         <div className="flex items-center gap-2 cursor-pointer">
           <Image src={NavLogo} className="lg:w-40 lg:h-14 w-24 h-5" alt='navbar logo' />
         </div>
