@@ -5,7 +5,6 @@ services:
     - docker:dind
     
 build-job:       # This job runs in the build stage, which runs first.
-  image: docker:dind
   stage: deploy
   script:
     #- pm2 start npm --  dev
