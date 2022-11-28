@@ -29,6 +29,7 @@ function Home() {
       <DevelopmentMobile />
       <OurClients />
       <HowWork />
+
       <Footer/>
     </>
   );
