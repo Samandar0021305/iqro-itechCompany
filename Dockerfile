@@ -16,4 +16,4 @@ ENV PORT 3003
 
 EXPOSE 3003
 
-CMD ["npm", "run","start"]
+CMD ["npm", "dev"]
