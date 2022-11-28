@@ -1,10 +1,11 @@
 stages:          # List of stages for jobs, and their order of execution
   - deploy
 
-services:
-    - docker:dind
+# services:
+#     - docker:dind
     
-build-job:       # This job runs in the build stage, which runs first.
+build-job:  
+  image: docker:dind   
   stage: deploy
   script:
     #- pm2 start npm --  dev
