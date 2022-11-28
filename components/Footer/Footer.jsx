@@ -35,7 +35,7 @@ function Footer() {
               {
                 navTextList.map((post, id) => {
                   return (
-                    <li key={id} className='text-blueFix md:text-[16px] text-[12px]'>
+                    <li key={id} className='text-blue md:text-[16px] text-[12px]'>
                   <a >{t(post.text)}</a>
                 </li>
                   )
@@ -51,7 +51,7 @@ function Footer() {
               {
                 footOne.map((pos, id) => {
                   return (
-                    <li key={id} className='text-blueFix break-words w-auto md:text-base text-sm '>
+                    <li key={id} className='text-blue break-words w-auto md:text-base text-sm '>
                     <a className='md:text-[16px] text-[12px]' href={pos.key}>
                       {t(pos.text)}
                     </a>
@@ -66,12 +66,12 @@ function Footer() {
           <div className='col-span-6 mt-4'>
             <h2 className='font-bold mb-3 text-sm md:text-2xl'>{t('Portfolio')}</h2>
             <ul>
-              <li className='text-blueFix md:text-[16px] text-[12px]'>
+              <li className='text-blue md:text-[16px] text-[12px]'>
                 <a href="">
                   {t('Barber_shop')}
                 </a>
               </li>
-              <li className='text-blueFix md:text-[16px] text-[12px]'>
+              <li className='text-blue md:text-[16px] text-[12px]'>
                 <a href="">
                   {t('Landing_page')}
                 </a>
@@ -83,7 +83,7 @@ function Footer() {
         <span className='flex w-full bg-blue  h-0.5 mt-9'></span>
         <div className='flex md:justify-between  md:items-center flex-wrap-reverse items-center justify-center'>
           <div className='col-span-6 mt-3'>
-            <h3 className='text-blueFix text-center '>© 2022 “Iqro Agency” LTD. All rights reserved</h3>
+            <h3 className='text-blue  text-center '>© 2022 “Iqro Agency” LTD. All rights reserved</h3>
           </div>
           <div className='col-span-6 mt-3'>
             <ul className='flex  items-center'>
