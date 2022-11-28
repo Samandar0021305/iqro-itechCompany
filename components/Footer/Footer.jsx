@@ -31,11 +31,11 @@ function Footer() {
         <div className='flex items-start justify-between flex-wrap mt-10 pl-5'>
           <div className='col-span-6  justify-center items-center    mt-4'>
             <h2 className='font-bold mb-3 md:text-2xl text-base'>{t("About_Us")}</h2>
-            <ul className='flex flex-col md:w-96  w-auto '>
+            <ul className='flex flex-col md:w-[250px]'>
               {
                 navTextList.map((post, id) => {
                   return (
-                    <li key={id} className='text-blueFix md:text-base text-xs'>
+                    <li key={id} className='text-blueFix md:text-[16px] text-[12px]'>
                   <a >{t(post.text)}</a>
                 </li>
                   )
@@ -45,14 +45,14 @@ function Footer() {
 
           </div>
 
-          <div className='col-span-6  mt-4'>
+          <div className='col-span-6 mt-4'>
             <h2 className='font-bold mb-3 text-sm md:text-2xl '>{t('Services')}</h2>
-            <ul className='md:w-96  w-auto mr-0 xl:mr-14'>
+            <ul className='md:w-96  w-auto mr-0 xl:mr-14 '>
               {
                 footOne.map((pos, id) => {
                   return (
                     <li key={id} className='text-blueFix break-words w-auto md:text-base text-sm '>
-                    <a className='md:text-base text-sm' href={pos.key}>
+                    <a className='md:text-[16px] text-[12px]' href={pos.key}>
                       {t(pos.text)}
                     </a>
                   </li>
@@ -66,12 +66,12 @@ function Footer() {
           <div className='col-span-6 mt-4'>
             <h2 className='font-bold mb-3 text-sm md:text-2xl'>{t('Portfolio')}</h2>
             <ul>
-              <li className='text-blueFix md:text-base text-sm'>
+              <li className='text-blueFix md:text-[16px] text-[12px]'>
                 <a href="">
                   {t('Barber_shop')}
                 </a>
               </li>
-              <li className='text-blueFix md:text-base text-xs'>
+              <li className='text-blueFix md:text-[16px] text-[12px]'>
                 <a href="">
                   {t('Landing_page')}
                 </a>
