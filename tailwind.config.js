@@ -9,7 +9,8 @@ module.exports = {
       black:"#000",
       blackDev:"#2E2E2E",
       indigo:'#7A5592',
-      white:"fff"
+      white:"fff",
+      bluef:"#159EEC26"
     },
     
     screens: {
