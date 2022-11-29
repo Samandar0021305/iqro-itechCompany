@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from "next-i18next";
-import {Services} from "./OurServicesValue"
+import {Services} from "../../utils/Constants"
 import Image from 'next/image';
 
 

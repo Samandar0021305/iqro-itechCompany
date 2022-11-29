@@ -40,6 +40,43 @@ import Dev2 from "../assets/development2.png"
 import Dev3 from "../assets/development3.png"
 
 
+
+import imgK1 from "../assets/services1.png"
+import imgK2 from "../assets/services2.png"
+import imgK3 from "../assets/services3.png"
+import imgK4 from "../assets/services4.png"
+import imgK5 from "../assets/services5.png"
+import imgK6 from "../assets/services6.png"
+
+
+export let Services = [
+    {
+        post:'Development_of',
+        img:imgK1
+    },
+    {
+        post:'Development_implementation',
+        img:imgK2
+    },
+    {
+        post:'User_interface',
+        img:imgK3
+    },
+    {
+        post:'Business_It',
+        img:imgK4
+    },
+    {
+        post:'IT_consulting',
+        img:imgK5
+    },
+    {
+        post:'Information_technology',
+        img:imgK6
+    },
+
+]
+
 export const NavbarList = [{
   key: 'Direction',
   text: 'Direction',

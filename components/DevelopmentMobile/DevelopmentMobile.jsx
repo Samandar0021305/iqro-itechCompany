@@ -10,7 +10,7 @@ function DevelopmentMobile() {
   return (
     <div>
       <div className='container lg:pr-1 lg:pl-1  p-0 lg:mt-0   pr-6 pl-6 sm:pr-0 sm:pl-0 mx-auto py-5'>
-        <h2 className='text-blue font-medium md:text-[67px] text-[28px]'>Development of <br /> mobile applications</h2>
+        <h2 className='text-blue font-medium md:text-[67px] text-[28px]  md:w-[600px] w-[255px]'>{t('Development_of')}</h2>
       </div>
 
       <div className='lg:bg-blue sm:bg-blue bg-white sm:bg-opacity-20  pr-6 pl-6  lg:bg-opacity-20 mt-[30px] sm:mt-[0]  pb-[70px]'>
