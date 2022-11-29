@@ -1,15 +1,17 @@
 import React from "react";
 import PageTitle from "../resuable/PageTitle";
 import Image from "next/image";
+import { useTranslation } from "next-i18next";
 
 const OptimizationPage = ({ item }) => {
+  const { t } = useTranslation();
   const { color, arr, desc, title, flex, image } = item;
   return (
     <div className={`bg-${color} bg-opacity-20 relative `}>
       <div className="container mx-auto py-[40px] px-3  sm:py-[60px]">
         <PageTitle title={title} />
         <div
-          className={`sm:flex ${flex} justify-between  gap-5  sm:my-[40px] `}
+          className={`sm:flex ${flex} justify-between  gap-5  sm:my-[40px] md:my-[20px] `}
         >
           <div className=" flex flex-col md:w-1/2  lg:w-5/12">
             <div className="flex justify-center">
@@ -21,8 +23,8 @@ const OptimizationPage = ({ item }) => {
             </div>
           </div>
           <div className="w-full  md:w-1/2">
-            <p className=" lg:w-3/4 xsm: mt-5 sm:mt-5 lg:mt-[60px] xsm:text-md lg:text-2xl  mb-5">
-              {desc}
+            <p className=" lg:w-4/5 xsm:mt-5 sm:mt-5 lg:mt-[60px] xsm:text-md lg:text-[28px]  mb-5">
+              {t(`commandPage.${desc}`)}
             </p>
             <div className="flex flex-wrap justify-center xsm:justify-start gap-3 md:gap-3 lg:gap-7  ">
               {arr.map((item, index) => (

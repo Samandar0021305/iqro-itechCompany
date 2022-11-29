@@ -22,10 +22,15 @@
     "command": "Command",
     "optimization Infrastructures": "Optimization Infrastructures",
     "it consulting": "IT consulting",
-    "it education centre": "IT Education centre"
+    "it education centre": "IT Education centre",
+    "erp systems": "ERP systems"
   },
   "commandPage": {
     "text": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
-    "dedicated": "Dedicated team"
+    "dedicated": "Dedicated team",
+    "text2": "IT Systems of any level of complexity at a convenient time for you",
+    "text3": "IT Systems of any level of complexity at a convenient time for you",
+    "text4": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
+    "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company"
   }
 }

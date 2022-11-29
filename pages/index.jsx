@@ -9,6 +9,7 @@ import OptimizationPage from "../components/optimazition";
 import Desktop from "../components/assets/png/Desktop.png";
 import Desktop2 from "../components/assets/png/Desktop2.png";
 import Desktop3 from "../components/assets/png/Desktop3.png";
+import Desktop4 from "../components/assets/png/Desktop4.png";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -20,7 +21,7 @@ const optimalComponents = [
   {
     id: 1,
     title: "optimization Infrastructures",
-    desc: "IT Systems of any level of complexity at a convenient time for you",
+    desc: "text2",
     color: "blue",
     image: Desktop,
     flex: "",
@@ -29,7 +30,7 @@ const optimalComponents = [
   {
     id: 2,
     title: "it consulting",
-    desc: "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
+    desc: "text4",
     color: "white",
     image: Desktop2,
     flex: "flex-row-reverse",
@@ -38,13 +39,22 @@ const optimalComponents = [
   {
     id: 3,
     title: "it education centre",
-    desc: "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
+    desc: "text5",
     color: "blue",
     image: Desktop3,
     flex: "",
     arr: [1, 2, 3, 4, 5, 6],
   },
 ];
+const erpSystems = {
+  id: 1,
+  title: "erp systems",
+  desc: "text3",
+  color: "blue",
+  image: Desktop4,
+  flex: "",
+  arr: [1, 2, 3, 4, 5, 6],
+};
 
 function Home() {
   const router = useRouter();
@@ -54,6 +64,7 @@ function Home() {
     <>
       <HomePage />
       <Command />
+      <OptimizationPage item={erpSystems} />
       {optimalComponents.map((item) => (
         <OptimizationPage key={item.id} item={item} />
       ))}
