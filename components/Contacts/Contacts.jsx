@@ -5,9 +5,9 @@ import Image from 'next/image'
 const Contacts = () => {
   
     return (
-    <div className='container  md:pl-2 p-0 mx-auto py-5 mb-[30px]'>
-        <div className='md:shadow-sm pl-[5px] flex justify-center lg:h-[537px] h-auto w-full md:p-[20px] p-0 md:pl-[40px] md:pr-[40px] flex-col'>
+    <div className='container md:pl-2 p-0 mx-auto py-5 mb-[30px]'>
         <h2 className='text-blackDev md:text-[28px] text-[21px]'>Leave us a message</h2>
+        
         <div className='flex items-start justify-between  lg:flex-row flex-col'>
         <form className='flex flex-col'>
            
@@ -18,7 +18,7 @@ const Contacts = () => {
             }
             <button className='bg-blue w-[278px] h-[49px] text-[#fff] mt-4 rounded'>Send</button>
            </form>
-           <div className='md:ml-[10px] lg:mt-0 mt-[20px] '>
+           <span className='md:ml-[10px] lg:mt-0 mt-[20px] '>
                 <ul>
                     {
                         localization.map((post,id)=>{
@@ -36,11 +36,9 @@ const Contacts = () => {
                       return  <Image className='object-scale-down' src={post} key={id} alt="" />
                     })}
                 </span>
-                <iframe  className='lg:w-[513px] w-[90%] lg:h-[190px] mt-7' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.2514415613233!2d69.60091886932778!3d40.84967060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae2d9478996ef1%3A0xd34c9a593a495cc9!2sUcell%20Olmaliq%20Filiali!5e0!3m2!1sru!2s!4v1669703570539!5m2!1sru!2s"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-           </div>
-        </div>
-        </div>
-       
+                <iframe  className='lg:w-[513px] w-[90%] lg:h-[190px] mt-7' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.2514415613233!2d69.60091886932778!3d40.84967060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae2d9478996ef1%3A0xd34c9a593a495cc9!2sUcell%20Olmaliq%20Filiali!5e0!3m2!1sru!2s!4v1669703570539!5m2!1sru!2s"  ></iframe>
+           </span>
+        </div>   
     </div>
   )
 }
