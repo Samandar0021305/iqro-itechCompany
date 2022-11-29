@@ -1,0 +1,44 @@
+import React from "react";
+import PageTitle from "../resuable/PageTitle";
+import Image from "next/image";
+
+const OptimizationPage = ({ item }) => {
+  const { color, arr, desc, title, flex, image } = item;
+  return (
+    <div className={`bg-${color} bg-opacity-20 relative `}>
+      <div className="container mx-auto py-[40px] px-3  sm:py-[60px]">
+        <PageTitle title={title} />
+        <div
+          className={`sm:flex ${flex} justify-between  gap-5  sm:my-[40px] `}
+        >
+          <div className=" flex flex-col md:w-1/2  lg:w-5/12">
+            <div className="flex justify-center">
+              <Image
+                src={image}
+                alt="image of computer"
+                className="mt-14 md:w-full lg:w-[599px] lg:mt-28"
+              />
+            </div>
+          </div>
+          <div className="w-full  md:w-1/2">
+            <p className=" lg:w-3/4 xsm: mt-5 sm:mt-5 lg:mt-[60px] xsm:text-md lg:text-2xl  mb-5">
+              {desc}
+            </p>
+            <div className="flex flex-wrap justify-center xsm:justify-start gap-3 md:gap-3 lg:gap-7  ">
+              {arr.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-blue lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
+                >
+                  A
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default OptimizationPage;

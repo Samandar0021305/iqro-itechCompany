@@ -1,21 +1,31 @@
 {
-          "hello": "Ga Xush kelibsiz",
-          "Direction":"Yo'nalish",
-          "Command":"Buyruq",
-          "home":{
-            "header":"IT autsorsing agentligi"
-          },
-          "Services":"Xizmatlar",
-          "Tools":"Asboblar",
-          "Clients":"Mijozlar",
-          "Portfolio":"Portfolio",
-          "About_Us":"Biz haqimizda",
-          "IT_consulting":"IT konsalting",
-          "Development_of":"Mobil ilovalarni ishlab chiqish",
-          "Development_implementation":"ERP tizimlarini ishlab chiqish va joriy etish",
-          "User_interface":"Foydalanuvchi interfeysi, foydalanuvchi tajribasi dizayni",
-          "Business_It":"Biznes va IT infratuzilmasini optimallashtirish va avtomatlashtirish",
-          "Information_technology":"Axborot texnologiyalari ta'lim markazi",
-          "Barber_shop":" Sartaroshxona",
-          "Landing_page":"Ochilish sahifasi"
+  "hello": "Ga Xush kelibsiz",
+  "Direction": "Yo'nalish",
+  "Command": "Buyruq",
+  "home": {
+    "header": "IT autsorsing agentligi"
+  },
+  "Services": "Xizmatlar",
+  "Tools": "Asboblar",
+  "Clients": "Mijozlar",
+  "Portfolio": "Portfolio",
+  "About_Us": "Biz haqimizda",
+  "IT_consulting": "IT konsalting",
+  "Development_of": "Mobil ilovalarni ishlab chiqish",
+  "Development_implementation": "ERP tizimlarini ishlab chiqish va joriy etish",
+  "User_interface": "Foydalanuvchi interfeysi, foydalanuvchi tajribasi dizayni",
+  "Business_It": "Biznes va IT infratuzilmasini optimallashtirish va avtomatlashtirish",
+  "Information_technology": "Axborot texnologiyalari ta'lim markazi",
+  "Barber_shop": " Sartaroshxona",
+  "Landing_page": "Ochilish sahifasi",
+  "titles": {
+    "command": "Buyruq",
+    "optimization Infrastructures": "Infratuzilmalarni Optimallashtirish",
+    "it consulting": "IT konsalting",
+    "it education centre": "IT-ta'lim markazi"
+  },
+  "commandPage": {
+    "text": "Har bir loyiha uchun biz loyiha menejeri, biznes-tahlilchi, UI / UX dizayneri, DevOps, QA muhandisi, backend va front-end ishlab chiquvchilarni o'z ichiga olgan jamoani shakllantiramiz.",
+    "dedicated": "Maxsus jamoa"
+  }
 }
