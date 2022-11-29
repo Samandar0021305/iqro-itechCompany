@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -15,12 +14,12 @@ import Desktop from "../components/assets/png/Desktop.png";
 import Desktop2 from "../components/assets/png/Desktop2.png";
 import Desktop3 from "../components/assets/png/Desktop3.png";
 import Desktop4 from "../components/assets/png/Desktop4.png";
+import { fields } from "../utils/feilds";
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
   },
 });
-
 const optimalComponents = [
   {
     id: 1,
@@ -59,11 +58,14 @@ const erpSystems = {
   flex: "",
   arr: [1, 2, 3, 4, 5, 6],
 };
-
 function Home() {
   const router = useRouter();
   const { locale } = router;
   const { t } = useTranslation("common");
+  const title = 'SignIn';
+  const onSubmit = (values) => {
+    console.log(values);
+  }
   return (
     <>
       <div className="container mx-auto">
@@ -72,15 +74,15 @@ function Home() {
       <OurServices />
       <Command />
       <DevelopmentMobile />
-      <OurClients />
-      <HowWork />
-     <Contacts />
-      <Command />
+      {/*<Command />*/}
       <OptimizationPage item={erpSystems} />
       {optimalComponents.map((item) => (
         <OptimizationPage key={item.id} item={item} />
       ))}
-      <Footer />
+      <OurClients />
+      <HowWork />
+      <Contacts />
+      <Footer/>
     </>
   );
 }
