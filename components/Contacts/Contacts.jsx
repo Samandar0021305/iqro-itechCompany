@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Contacts = () => {
   
     return (
-    <div className='container  md:pl-2 p-0 mx-auto py-5'>
+    <div className='container  md:pl-2 p-0 mx-auto py-5 mb-[30px]'>
         <div className='md:shadow-sm pl-[5px] flex justify-center lg:h-[537px] h-auto w-full md:p-[20px] p-0 md:pl-[40px] md:pr-[40px] flex-col'>
         <h2 className='text-blackDev md:text-[28px] text-[21px]'>Leave us a message</h2>
         <div className='flex items-start justify-between  lg:flex-row flex-col'>
