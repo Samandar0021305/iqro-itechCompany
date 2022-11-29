@@ -1,28 +1,17 @@
-before_script:
-  - docker login $CI_REGISTRY --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD
-
 stages:          # List of stages for jobs, and their order of execution
   - deploy
 
 services:
     - docker:dind
     
-build-job:       # This job runs in the build stage, which runs first.
-  image: docker:dind
+build-job:  
+  image: docker:dind   
   stage: deploy
   script:
-  #  - docker rmi nextjs-image 2>/dev/null
-    - docker system prune -f
-    - docker image prune --all --force
-    - docker container prune
+    #- pm2 start npm --  dev
     - docker build -t nextjs-image .
-    - docker run -d -p 3003:3000  --name nextjs-container  nextjs-image 
-    - docker logs nextjs-container 
-    - docker images -a
-    - docker ps -a 
+    - docker run -d -p 3003:3003  --name nextjs-container  nextjs-image 
     - echo "Compiling the code..."
     - echo "Compile complete."
-  tags:
-    - docker
   only:
     - deploy
