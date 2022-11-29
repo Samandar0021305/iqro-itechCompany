@@ -7,7 +7,7 @@ import Command from "../components/command/index";
 import Footer from "../components/Footer/Footer";
 import OptimizationPage from "../components/optimazition";
 import Tools from "../components/tools";
-import { optimalComponents, erpSystems } from "../data";
+import { optimalComponents, erpSystems } from "../utils/Constants";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {

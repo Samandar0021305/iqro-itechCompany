@@ -30,7 +30,8 @@ const HomePage = () => {
           </h4>
           <Button
             type="button"
-            className="bg-blue md:w-[180px] md:h-[48px] hidden sm:block "
+            className="bg-blue md:w-[180px] md:h-[48px] hidden sm:block text-[26px] "
+            children="Contact"
           >
             Contact
           </Button>

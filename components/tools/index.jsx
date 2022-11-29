@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PageTitle from "../resuable/PageTitle";
 import tool1 from "../assets/png/tool1.png";
 import Image from "next/image";
-import { tools, radioButtons } from "./toolsData";
+import { tools, radioButtons } from "../../utils/Constants";
 
 const Tools = () => {
   const [value, setValue] = useState({});
