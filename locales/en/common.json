@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
           "hello":"welcome to",
           "home": {
             "header": "IT-Outsourcing Agency"
@@ -20,4 +21,40 @@
           "Landing_page":"Landing page",
           "in_collabration":"In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
           "Technologies":"Technologies"
+=======
+  "hello": "welcome to",
+  "home": {
+    "header": "IT-Outsourcing Agency"
+  },
+  "Direction": "Direction",
+  "Command": "Command",
+  "Services": "Services",
+  "Tools": "Tools",
+  "Clients": "Clients",
+  "Portfolio": "Portfolio",
+  "About_Us": "About us",
+  "IT_consulting": "IT consulting",
+  "Development_of": "Development of mobile applications",
+  "Development_implementation": "Development and implementation ERP systems",
+  "User_interface": "User interface, User experience design",
+  "Business_It": "Business and IT Infrastructure Optimization and Automation",
+  "Information_technology": "Information technology Education center",
+  "Barber_shop": " Barber shop",
+  "Landing_page": "Landing page",
+  "titles": {
+    "command": "Command",
+    "optimization Infrastructures": "Optimization Infrastructures",
+    "it consulting": "IT consulting",
+    "it education centre": "IT Education centre",
+    "erp systems": "ERP systems"
+  },
+  "commandPage": {
+    "text": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
+    "dedicated": "Dedicated team",
+    "text2": "IT Systems of any level of complexity at a convenient time for you",
+    "text3": "IT Systems of any level of complexity at a convenient time for you",
+    "text4": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
+    "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company"
+  }
+>>>>>>> aa6f457885625f61e6139c81d3039e8a0736cf50
 }
