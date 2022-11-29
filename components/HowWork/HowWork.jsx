@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { WorkedList } from './WorkConstants'
+import { WorkedList } from '../../utils/Constants'
 
 const HowWork = () => {
   return (

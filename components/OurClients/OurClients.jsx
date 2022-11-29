@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Our } from './OurConst'
+import { Our } from '../../utils/Constants'
 
 const OurClients = () => {
   return (

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { Dev, Development } from './Constants'
+import { Dev, Development } from '../../utils/Constants'
 import { useTranslation } from "next-i18next";
 import Img from "../../assets/DevelopmentMobileBg.png"
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Inputs from './Inputs'
-import { inputs, localization, logo } from './Constants'
+import { inputs, localization, logo } from '../../utils/Constants'
 import Image from 'next/image'
 import { useFormik } from 'formik';
 
