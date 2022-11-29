@@ -2,6 +2,18 @@ import Desktop from "../components/assets/png/Desktop.png";
 import Desktop2 from "../components/assets/png/Desktop2.png";
 import Desktop3 from "../components/assets/png/Desktop3.png";
 import Desktop4 from "../components/assets/png/Desktop4.png";
+import archer from "../assets/svgIcons/archi.svg";
+import auto from "../assets/svgIcons/auto.svg";
+import ci from "../assets/svgIcons/ci.svg";
+import cloud from "../assets/svgIcons/cloud.svg";
+import devops from "../assets/svgIcons/devops.svg";
+import load from "../assets/svgIcons/load.svg";
+import stres from "../assets/svgIcons/stres.svg";
+import frontend from "../assets/svgIcons/frontend.svg";
+import mobile from "../assets/svgIcons/mobil.svg";
+import qa from "../assets/svgIcons/qa.svg";
+import ux from "../assets/svgIcons/ux.svg";
+import backend from "../assets/svgIcons/backed.svg";
 
 export const optimalComponents = [
   {
@@ -11,7 +23,15 @@ export const optimalComponents = [
     color: "blue",
     image: Desktop,
     flex: "",
-    arr: [1, 2, 3, 4, 5, 6, 7],
+    arr: [
+      { id: 1, title: "Architecture", img: archer },
+      { id: 2, title: "Autotesting", img: auto },
+      { id: 3, title: "Stress testing", img: stres },
+      { id: 4, title: "Load testing", img: load },
+      { id: 5, title: "Devops", img: devops },
+      { id: 6, title: "Cloud", img: cloud },
+      { id: 7, title: "CI/CD", img: ci },
+    ],
   },
   {
     id: 2,
@@ -20,7 +40,14 @@ export const optimalComponents = [
     color: "white",
     image: Desktop2,
     flex: "flex-row-reverse",
-    arr: [1, 2, 3, 4, 5, 6],
+    arr: [
+      { id: 1, title: "Architecture", img: archer },
+      { id: 2, title: "Devops", img: devops },
+      { id: 3, title: "UX/UI", img: ux },
+      { id: 4, title: "Backend", img: backend },
+      { id: 5, title: "Frontend", img: frontend },
+      { id: 6, title: "QA", img: qa },
+    ],
   },
   {
     id: 3,
@@ -29,7 +56,14 @@ export const optimalComponents = [
     color: "blue",
     image: Desktop3,
     flex: "",
-    arr: [1, 2, 3, 4, 5, 6],
+    arr: [
+      { id: 1, title: "Architecture", img: archer },
+      { id: 2, title: "Devops", img: devops },
+      { id: 3, title: "UX/UI", img: ux },
+      { id: 4, title: "Backend", img: backend },
+      { id: 5, title: "Frontend", img: frontend },
+      { id: 6, title: "SMM", img: mobile },
+    ],
   },
 ];
 export const erpSystems = {
@@ -39,7 +73,14 @@ export const erpSystems = {
   color: "blue",
   image: Desktop4,
   flex: "",
-  arr: [1, 2, 3, 4, 5, 6],
+  arr: [
+    { id: 1, title: "Architecture", img: archer },
+    { id: 2, title: "Devops", img: devops },
+    { id: 3, title: "UX/UI", img: ux },
+    { id: 4, title: "Backend", img: backend },
+    { id: 5, title: "Frontend", img: frontend },
+    { id: 6, title: "SMM", img: mobile },
+  ],
 };
 
 export const NavbarList = [
