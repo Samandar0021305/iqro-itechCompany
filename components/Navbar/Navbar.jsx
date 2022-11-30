@@ -49,7 +49,7 @@ function Navbar() {
         </div>
         <div className="flex items-center sm:ml-auto sm:mr-4  ml-auto">
           <ul className="flex space-x-10 items-center text-gray-600 dark:text-gray-100 mt-0.5 font-400  font-normal text-sm capitalize">
-            {navTextList.map((post, index) => {
+            {navTextList.map(post => {
               return (
                 <li
                   className="hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden "
