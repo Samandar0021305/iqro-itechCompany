@@ -9,7 +9,7 @@ const Command = () => {
   return (
     <div className="bg-blue bg-opacity-20 relative">
       <div className="sm:flex justify-between container mx-auto px-3">
-        <div className="sm:w-2/3 py-9">
+        <div className="sm:w-2/3 py-12">
           <PageTitle title="command" />
           <p className="mt-40 xsm:text-md lg:text-2xl sm:mt-14 mb-5">
             {t("commandPage.text")}
@@ -24,7 +24,6 @@ const Command = () => {
             src={command}
             className="hidden sm:block sm:w-[220px] lg:w-[300px] sm:ml-auto"
             alt="image of robotic "
-            // width={300}
           />
           <Image
             src={command}

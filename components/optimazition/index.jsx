@@ -23,16 +23,20 @@ const OptimizationPage = ({ item }) => {
             </div>
           </div>
           <div className="w-full  md:w-1/2">
-            <p className=" lg:w-4/5 xsm:mt-5 sm:mt-5 lg:mt-[60px] xsm:text-md lg:text-[28px]  mb-5">
+            <p className=" lg:w-11/12 xsm:mt-5 sm:mt-5 lg:mt-[50px] xsm:text-md lg:text-[28px]  mb-5">
               {t(`commandPage.${desc}`)}
             </p>
             <div className="flex flex-wrap justify-center xsm:justify-start gap-3 md:gap-3 lg:gap-7  ">
               {arr.map((item, index) => (
                 <div
                   key={index}
-                  className="bg-blue lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
+                  className="bg-blue flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
                 >
-                  A
+                  <Image
+                    className=" w-[39px] md:w-[50px] lg:w-[70px]"
+                    src={item.img}
+                  />
+                  <div className="font-medium">{item.title}</div>
                 </div>
               ))}
             </div>

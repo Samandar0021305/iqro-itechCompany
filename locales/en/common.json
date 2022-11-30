@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
           "hello":"welcome to",
           "home": {
             "header": "IT-Outsourcing Agency"
@@ -20,6 +21,9 @@
           "Landing_page":"Landing page",
           "in_collabration":"In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
           "Technologies":"Technologies",
+=======
+  "hello": "welcome to",
+>>>>>>> ecc253a7da4a44dcc5f7e1bb9b3221e8ca253104
   "home": {
     "header": "IT-Outsourcing Agency"
   },
@@ -43,7 +47,13 @@
     "optimization Infrastructures": "Optimization Infrastructures",
     "it consulting": "IT consulting",
     "it education centre": "IT Education centre",
-    "erp systems": "ERP systems"
+    "erp systems": "ERP systems",
+    "tools": "Tools",
+    "our services": "Our services",
+    "development of mobile applications": "Development of mobile applications",
+    "how we work": "How we work",
+    "our clients": "Our clients",
+    "contact us": "Contact us"
   },
   "commandPage": {
     "text": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
