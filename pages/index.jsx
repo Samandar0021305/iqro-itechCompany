@@ -35,7 +35,6 @@ function Home() {
       <Command />
       <DevelopmentMobile />
       <OptimizationPage item={erpSystems} />
-      <DevelopmentMobile />
       {optimalComponents.map((item) => (
         <OptimizationPage key={item.id} item={item} />
       ))}

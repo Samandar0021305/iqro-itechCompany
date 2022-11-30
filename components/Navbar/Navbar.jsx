@@ -79,7 +79,7 @@ function Navbar() {
                 className="flex items-center justify-center"
                 href="tel:998930026613"
               >
-                Contact
+                {t('contact')}
               </a>
             </li>
           </ul>

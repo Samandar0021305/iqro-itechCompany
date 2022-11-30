@@ -1,5 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
 module.exports = {
   content: ["./pages/**/*.{js,ts,jsx}", "./components/**/*.{js,ts,jsx}"],
   theme: {
@@ -13,7 +12,7 @@ module.exports = {
       white:"fff",
       bluef:"#159EEC26"
     },
-    
+
     screens: {
       xsm: "320px",
       sm: "640px",
