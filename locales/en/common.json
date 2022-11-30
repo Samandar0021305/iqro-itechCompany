@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
           "hello":"welcome to",
           "home": {
             "header": "IT-Outsourcing Agency"
@@ -20,9 +19,7 @@
           "Barber_shop":" Barber shop",
           "Landing_page":"Landing page",
           "in_collabration":"In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
-          "Technologies":"Technologies"
-=======
-  "hello": "welcome to",
+          "Technologies":"Technologies",
   "home": {
     "header": "IT-Outsourcing Agency"
   },
@@ -56,5 +53,4 @@
     "text4": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
     "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company"
   }
->>>>>>> aa6f457885625f61e6139c81d3039e8a0736cf50
 }
