@@ -7,7 +7,13 @@ module.exports = {
     colors: {
       blue: "#159EEC",
       sky: "#D0ECFB",
+      black:"#000",
+      blackDev:"#2E2E2E",
+      indigo:'#7A5592',
+      white:"fff",
+      bluef:"#159EEC26"
     },
+    
     screens: {
       xsm: "320px",
       sm: "640px",

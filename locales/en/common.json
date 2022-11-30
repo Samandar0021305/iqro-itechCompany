@@ -24,7 +24,12 @@
     "it consulting": "IT consulting",
     "it education centre": "IT Education centre",
     "erp systems": "ERP systems",
-    "tools": "Tools"
+    "tools": "Tools",
+    "our services": "Our services",
+    "development of mobile applications": "Development of mobile applications",
+    "how we work": "How we work",
+    "our clients": "Our clients",
+    "contact us": "Contact us"
   },
   "commandPage": {
     "text": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",

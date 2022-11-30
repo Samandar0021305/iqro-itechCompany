@@ -14,6 +14,283 @@ import mobile from "../assets/svgIcons/mobil.svg";
 import qa from "../assets/svgIcons/qa.svg";
 import ux from "../assets/svgIcons/ux.svg";
 import backend from "../assets/svgIcons/backed.svg";
+import cons1 from "../assets/cons1.png";
+import cons2 from "../assets/cons2.png";
+import cons3 from "../assets/cons3.png";
+import Fac from "../assets/facebook.png";
+import Youteb from "../assets/youTube.png";
+import Twwiter from "../assets/twwiter.png";
+import InstataGram from "../assets/instagram.png";
+import img1 from "../assets/our1.png";
+import img2 from "../assets/our2.png";
+import img3 from "../assets/our3.png";
+import img4 from "../assets/our4.png";
+import img5 from "../assets/our5.png";
+import img6 from "../assets/our6.png";
+import img7 from "../assets/our7.png";
+import img8 from "../assets/our8.png";
+import img9 from "../assets/our9.png";
+import img10 from "../assets/our10.png";
+import img11 from "../assets/our11.png";
+import img12 from "../assets/our12.png";
+import work1 from "../assets/work1.png";
+import work2 from "../assets/work2.png";
+import work3 from "../assets/work3.png";
+import work4 from "../assets/work4.png";
+import work5 from "../assets/work5.png";
+import imgI1 from "../assets/ios.png";
+import imgI2 from "../assets/andro.png";
+import imgI3 from "../assets/bespro.png";
+import Dev1 from "../assets/dev.png";
+import Dev2 from "../assets/development2.png";
+import Dev3 from "../assets/development3.png";
+
+import Robo1 from "../assets/svgRobo/Robo1.svg";
+import Robo2 from "../assets/svgRobo/Robo2.svg";
+import Robo3 from "../assets/svgRobo/Robo3.svg";
+import Robo4 from "../assets/svgRobo/Robo4.svg";
+import Robo5 from "../assets/svgRobo/Robo5.svg";
+import Robo6 from "../assets/svgRobo/Robo6.svg";
+
+export let Services = [
+  {
+    post: "Development_of",
+    img: Robo1,
+    bottom: 0,
+    left: 0,
+    position: "bottom-0 right-0",
+  },
+  {
+    post: "Development_implementation",
+    img: Robo2,
+    position: "bottom-0 right-0",
+  },
+  {
+    post: "User_interface",
+    img: Robo3,
+    position: "bottom-0 right-0",
+  },
+  {
+    post: "Business_It",
+    img: Robo4,
+    position: "bottom-0 right-0",
+  },
+  {
+    post: "IT_consulting",
+    img: Robo5,
+    position: "top-0 right-0",
+  },
+  {
+    post: "Information_technology",
+    img: Robo6,
+    position: "bottom-0 right-0",
+  },
+];
+
+export const NavbarList = [
+  {
+    key: "Direction",
+    text: "Direction",
+    id: 1,
+  },
+  {
+    key: "Command",
+    text: "Command",
+    id: 2,
+  },
+  {
+    key: "Services",
+    text: "Services",
+    id: 3,
+  },
+  {
+    key: "Tools",
+    text: "Tools",
+    id: 4,
+  },
+  {
+    key: "Clients",
+    text: "Clients",
+    id: 5,
+  },
+  {
+    key: "Portfolio",
+    text: "Portfolio",
+    id: 6,
+  },
+];
+
+export const FooterList = [
+  {
+    text: "IT_consulting",
+    key: "IT_consulting",
+    id: 7,
+  },
+
+  {
+    text: "Development_of",
+    key: "Development_of",
+    id: 8,
+  },
+
+  {
+    text: "Development_implementation",
+    key: "Development_implementation",
+    id: 9,
+  },
+  {
+    text: "User_interface",
+    key: "User_interface",
+    id: 10,
+  },
+
+  {
+    text: "Business_It",
+    key: "Business_It",
+    id: 11,
+  },
+  {
+    text: "Information_technology",
+    key: "Information_technology",
+    id: 12,
+  },
+];
+
+export const Our = [
+  {
+    img: img1,
+  },
+  {
+    img: img2,
+  },
+  {
+    img: img3,
+  },
+  {
+    img: img4,
+  },
+  {
+    img: img5,
+  },
+  {
+    img: img6,
+  },
+  {
+    img: img7,
+  },
+  {
+    img: img8,
+  },
+  {
+    img: img9,
+  },
+  {
+    img: img10,
+  },
+  {
+    img: img11,
+  },
+  {
+    img: img12,
+  },
+];
+
+export const WorkedList = [
+  {
+    img: work1,
+    title: "Contact",
+    text: "Send us your project request or project idea.",
+  },
+  {
+    img: work2,
+    title: "Analysis",
+    text: "We will contact you to clarify your project requirements.",
+  },
+  {
+    img: work3,
+    title: "Offer",
+    text: "We will provide you with our free, non-binding application.",
+  },
+  {
+    img: work4,
+    title: "Team",
+    text: "We provide a team for your requirements.",
+  },
+  {
+    img: work5,
+    title: "Start",
+    text: "You will get to know the team and we'll get started.",
+  },
+];
+
+export const Development = [
+  {
+    title: "iOS",
+    src: imgI1,
+    id: 1,
+  },
+  {
+    title: "Android",
+    src: imgI2,
+    id: 2,
+  },
+  {
+    title: "Android",
+    src: imgI3,
+    id: 3,
+  },
+];
+
+export let Dev = [
+  {
+    text: "Swift",
+    img: Dev1,
+  },
+  {
+    text: "Kotlin",
+    img: Dev2,
+  },
+  {
+    text: "Flutter",
+    img: Dev3,
+  },
+];
+
+export const inputs = [
+  {
+    type: "text",
+    placeholder: "Name",
+    name: "name",
+    style: " pl-3 border-[1px]  border-blackDev mt-[20px] rounded",
+  },
+  {
+    type: "email",
+    name: "email",
+    placeholder: "Your email",
+    style: "  pl-3 border-[1px]  border-blackDev mt-[20px] rounded",
+  },
+  {
+    type: "text",
+    name: "number",
+    placeholder: "Your number",
+    style: " pl-3 border-[1px]  border-blackDev mt-[20px] rounded",
+  },
+];
+
+export const localization = [
+  {
+    img: cons1,
+    text: "Almalyk city, Tashkent region, Amir Temur-29a",
+  },
+  {
+    img: cons2,
+    text: "+998 95 007 70 50",
+  },
+  {
+    img: cons3,
+    text: "sardorprogg@gmail.com",
+  },
+];
 
 export const optimalComponents = [
   {
@@ -83,63 +360,6 @@ export const erpSystems = {
   ],
 };
 
-export const NavbarList = [
-  {
-    key: "Direction",
-    text: "Direction",
-  },
-  {
-    key: "Command",
-    text: "Command",
-  },
-  {
-    key: "Services",
-    text: "Services",
-  },
-  {
-    key: "Tools",
-    text: "Tools",
-  },
-  {
-    key: "Clients",
-    text: "Clients",
-  },
-  {
-    key: "Portfolio",
-    text: "Portfolio",
-  },
-];
-
-export const FooterList = [
-  {
-    text: "IT_consulting",
-    key: "IT_consulting",
-  },
-
-  {
-    text: "Development_of",
-    key: "Development_of",
-  },
-
-  {
-    text: "Development_implementation",
-    key: "Development_implementation",
-  },
-  {
-    text: "User_interface",
-    key: "User_interface",
-  },
-
-  {
-    text: "Business_It",
-    key: "Business_It",
-  },
-  {
-    text: "Information_technology",
-    key: "Information_technology",
-  },
-];
-
 export const radioButtons = [
   { id: 1, label: "Frontend", name: "tool" },
   { id: 2, label: "Backend", name: "tool" },
@@ -200,3 +420,5 @@ export const tools = [
   { id: 47, title: "Promotheus", image: "", status: "Mobile" },
   { id: 48, title: "Promotheus", image: "", status: "Mobile" },
 ];
+
+export const logo = [Fac, Youteb, Twwiter, InstataGram];
