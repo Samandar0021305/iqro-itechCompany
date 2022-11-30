@@ -16,9 +16,9 @@ export const getStaticProps = async ({ locale }) => ({
 
 function Navbar() {
   // const [toogleEl,setToogleEl] = useState(false)
-  const [toogler,setToogler] = useState(true)
+  const [toogler,setToogler] = useState(true);
   const [hidden, sethidden] = useState("hidden");
-  const classes = `${hidden} bg-[#E9F7FF] absolute h-full pt-36 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
+  const classes = `${hidden} bg-[#E9F7FF] absolute  h-[100vh+20px] pt-36 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
   const toogle = () => {
     hidden == "hidden" ? sethidden("none") : sethidden("hidden");
     setToogler(pre => !pre)
@@ -102,9 +102,7 @@ const TooglerHandler = ()=>{
         /> : <Image alt="safasfas" src={Toogler1} onClick={TooglerHandler} 
          className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
         />
-        }
-        
-        
+        }  
         <ul className={classes}>
           {navTextList.map((post, id) => {
             return <li key={post.id + 15}> <a href={post.key}>
