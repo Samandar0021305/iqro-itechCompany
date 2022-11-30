@@ -33,7 +33,7 @@ const Contacts = (props) => {
                   className="flex mt-1 mb-4 gap-2 items-center w-[100%]"
                   key={id}
                 >
-                  <Image src={post.img} alt="" />
+                  <Image src={post.img} alt="location image" />
                   <p className="ml-[5px] lg:text-[18px] w-full md:text-[16px] text-[12px] text-[#222222]">
                     {post.text}
                   </p>

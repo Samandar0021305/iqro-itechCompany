@@ -13,6 +13,7 @@ import OptimizationPage from "../components/optimazition";
 import Tools from "../components/tools";
 import { optimalComponents, erpSystems } from "../utils/Constants";
 import { fields } from "../utils/feilds";
+import UiDesign from "../components/ui";
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -35,7 +36,7 @@ function Home() {
       <Command />
       <DevelopmentMobile />
       <OptimizationPage item={erpSystems} />
-      <DevelopmentMobile />
+      <UiDesign />
       {optimalComponents.map((item) => (
         <OptimizationPage key={item.id} item={item} />
       ))}

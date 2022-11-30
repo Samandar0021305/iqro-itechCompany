@@ -240,6 +240,38 @@ export const Development = [
     id: 3,
   },
 ];
+export const Development1 = [
+  {
+    title: "iOS",
+    src: imgI1,
+    id: 1,
+  },
+  {
+    title: "Android",
+    src: imgI2,
+    id: 2,
+  },
+  {
+    title: "Android",
+    src: imgI3,
+    id: 3,
+  },
+  {
+    title: "iOS",
+    src: imgI1,
+    id: 4,
+  },
+  {
+    title: "Android",
+    src: imgI2,
+    id: 5,
+  },
+  {
+    title: "Android",
+    src: imgI3,
+    id: 6,
+  },
+];
 
 export let Dev = [
   {
@@ -249,6 +281,24 @@ export let Dev = [
   {
     text: "Kotlin",
     img: Dev2,
+  },
+  {
+    text: "Flutter",
+    img: Dev3,
+  },
+];
+export let Dev12 = [
+  {
+    text: "Swift",
+    img: Dev1,
+  },
+  {
+    text: "Kotlin",
+    img: Dev2,
+  },
+  {
+    text: "Flutter",
+    img: Dev3,
   },
   {
     text: "Flutter",

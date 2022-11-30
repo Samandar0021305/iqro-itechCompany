@@ -6,6 +6,7 @@ import Image from "next/image";
 import { NavbarList } from "../../utils/Constants";
 import Button from "../BaseButton/BaseButton";
 
+
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
@@ -79,7 +80,7 @@ function Navbar() {
                 className="flex items-center justify-center"
                 href="tel:998930026613"
               >
-                Contact
+                {t("button")}
               </a>
             </li>
           </ul>
