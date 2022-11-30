@@ -5,6 +5,8 @@ import NavLogo from "../../assets/navbar-logo.svg";
 import Image from "next/image";
 import { NavbarList } from "../../utils/Constants";
 import Button from "../BaseButton/BaseButton";
+import menu from "../../assets/menu.png"
+import Toogler1 from "../../assets/toogler1.png"
 
 export const getStaticProps = async ({ locale }) => ({
   props: {
@@ -14,11 +16,18 @@ export const getStaticProps = async ({ locale }) => ({
 
 function Navbar() {
   // const [toogleEl,setToogleEl] = useState(false)
+  const [toogler,setToogler] = useState(true)
   const [hidden, sethidden] = useState("hidden");
-  const classes = `${hidden} bg-[#E9F7FF] absolute h-[100vh] pt-36 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
+  const classes = `${hidden} bg-[#E9F7FF] absolute h-full pt-36 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
   const toogle = () => {
     hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+    setToogler(pre => !pre)
   };
+const TooglerHandler = ()=>{
+  setToogler(pre => !pre)
+  hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+
+}
 
   const background = {
     background: "#159EEC",
@@ -84,17 +93,22 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <div
+        {
+          toogler ? <Image
           onClick={toogle}
-          className="space-y-1 visible lg:hidden cursor-pointer z-40"
-        >
-          <div className="w-6 h-0.5 bg-black"></div>
-          <div className="w-6 h-0.5 bg-black"></div>
-          <div className="w-6 h-0.5 bg-black"></div>
-        </div>
+          src={menu}
+          alt=""
+          className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
+        /> : <Image alt="safasfas" src={Toogler1} onClick={TooglerHandler} 
+         className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
+        />
+        }
+        
+        
         <ul className={classes}>
           {navTextList.map((post, id) => {
-            return <li key={post.id + 15}>{t(post.text)}</li>;
+            return <li key={post.id + 15}> <a href={post.key}>
+              {t(post.text)}</a></li>;
           })}
           <Button className="bg-blue py-3 px-10"> Contact </Button>
         </ul>

@@ -6,7 +6,7 @@ import PageTitle from "../resuable/PageTitle";
 const OurClients = () => {
   return (
     <div className="container mx-auto py-9 px-3  ">
-      <PageTitle title="our clients" />
+      <PageTitle id="Clients" title="our clients" />
       <ul className="flex flex-wrap justify-between w-[100%] mt-6 sm:mt-12">
         {Our.map((post, id) => {
           return (

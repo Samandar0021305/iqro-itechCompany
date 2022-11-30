@@ -24,7 +24,7 @@ function Home() {
   const router = useRouter();
   const { locale } = router;
   const { t } = useTranslation("common");
-  const title = "SignIn";
+
   const onSubmit = (values) => {
     console.log(values);
   };

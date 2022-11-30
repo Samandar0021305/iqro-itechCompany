@@ -9,7 +9,7 @@ const OurServices = () => {
 
   return (
     <div className="container px-3 p-0 mx-auto py-14 sm:py-20  ">
-      <PageTitle title="our services" />
+      <PageTitle  id="Services" title="our services" />
       <ul className="flex justify-between mt-5 sm:mt-8 flex-wrap gap-2 xsm:gap-3 xl:gap-6 ">
         {Services.map((postEl, id) => {
           return (
