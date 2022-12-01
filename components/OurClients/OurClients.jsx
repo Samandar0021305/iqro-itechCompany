@@ -14,7 +14,7 @@ const OurClients = () => {
               className="md:w-[220px] xl:w-[200px] rounded bg-bluef p-4 md:h-[120px] w-[85px] h-[55px] mt-4 sm:ml-1 sm:mr-1 flex justify-center items-center "
               key={id}
             >
-              <Image src={post.img} alt="" />
+              <Image src={post.img} alt="our client" />
             </li>
           );
         })}
