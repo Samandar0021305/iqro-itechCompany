@@ -35,7 +35,7 @@ const UiDesign = () => {
             <h2 className=" text-xl xsm:text-2xl lg:text-3xl font-medium sm:font-semibold mt-10 lg:mt-16">
               {t("Technologies")}
             </h2>
-            <ul className="mt-[20px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
+            <ul className="mt-[15px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
               {Dev12.map((postEl, id) => {
                 return (
                   <li key={id}>
@@ -44,7 +44,7 @@ const UiDesign = () => {
                       src={postEl.img}
                       alt=""
                     />
-                    <p className="text-center mt-1 text-[15px] md:text-[19px] lg:text-[21px] ">
+                    <p className="text-center mt-1 text-[15px]  lg:text-[21px] ">
                       {postEl.text}
                     </p>
                   </li>
@@ -52,7 +52,7 @@ const UiDesign = () => {
               })}
             </ul>
           </div>
-          <div className="sm:w-[50%]  sm:mt-12 lg:mt-4 ">
+          <div className="sm:w-[50%]  sm:mt-10 lg:mt-4 ">
             <p className="lg:w-11/12 sm:mt-[30px] lg:mt-[50px] xsm:text-md lg:text-[28px]  mb-5">
               {t("commandPage.text7")}
             </p>

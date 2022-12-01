@@ -52,6 +52,28 @@ import Robo4 from "../assets/svgRobo/Robo4.svg";
 import Robo5 from "../assets/svgRobo/Robo5.svg";
 import Robo6 from "../assets/svgRobo/Robo6.svg";
 
+// tools images
+import android from "../assets/tools/Android.png";
+import azure from "../assets/tools/Azure.png";
+import docker from "../assets/tools/Docker.png";
+import figma from "../assets/tools/Figma.png";
+import Gitlab from "../assets/tools/Gitlab.png";
+import Go from "../assets/tools/go.png";
+import Ios from "../assets/tools/Ios.png";
+import Java from "../assets/tools/Java.png";
+import Js from "../assets/tools/Js.png";
+import Kotlin from "../assets/tools/Kotlin.png";
+import Next from "../assets/tools/Next.png";
+import Nodejs from "../assets/tools/Nodejs.png";
+import Photoshop from "../assets/tools/Photoshop.png";
+import php from "../assets/tools/php.png";
+import Postgresq from "../assets/tools/Postgresq.png";
+import Python from "../assets/tools/Python.png";
+import React from "../assets/tools/React.png";
+import sass from "../assets/tools/sass.png";
+import Sketch from "../assets/tools/Sketch.png";
+import Swift from "../assets/tools/Swift.png";
+
 export let Services = [
   {
     post: "Development_of",
@@ -306,7 +328,6 @@ export let Dev12 = [
   },
 ];
 
-
 export const inputs = [
   {
     type: "text",
@@ -463,7 +484,7 @@ export const tools = [
   { id: 39, title: "Promotheus", image: "", status: "Infrastructure" },
   { id: 40, title: "Promotheus", image: "", status: "Infrastructure" },
   { id: 41, title: "Promotheus", image: "", status: "Infrastructure" },
-  { id: 42, title: "Promotheus", image: "", status: "Mobile" },
+  { id: 42, title: "Android", image: android, status: "Mobile" },
   { id: 43, title: "Promotheus", image: "", status: "Mobile" },
   { id: 44, title: "Promotheus", image: "", status: "Mobile" },
   { id: 45, title: "Promotheus", image: "", status: "Mobile" },

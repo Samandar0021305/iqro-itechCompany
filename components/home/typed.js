@@ -6,6 +6,7 @@ import { useTranslation } from "next-i18next";
 const TypedTex = () => {
   const { t } = useTranslation();
   const el = useRef(null);
+  
 
   useEffect(() => {
     const typed = new Typed(el.current, {

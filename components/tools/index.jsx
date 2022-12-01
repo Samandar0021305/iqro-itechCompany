@@ -12,12 +12,12 @@ const Tools = () => {
   };
 
   return (
-    <div className="container mx-auto py-12 sm:py-16 px-3">
+    <div className="container mx-auto py-12  px-3">
       <PageTitle id="Tools" title="tools" />
       <div className="flex gap-5 sm:gap-10 flex-wrap mt-10 sm:mt-14 ">
         {radioButtons.map((item) => (
           <div
-            className="flex  gap-2 font-medium text-[18px] sm:text-[21px] "
+            className="flex items-center justify-center  gap-2 font-medium text-[18px] sm:text-[21px] "
             key={item.id}
           >
             <input

@@ -7,7 +7,7 @@ import PageTitle from "../resuable/PageTitle";
 
 const Contacts = (props) => {
   return (
-    <div className="container px-3 mx-auto mb-[30px] py-12">
+    <div className="container px-3 mx-auto  py-12">
       <PageTitle title="contact us" />
       <h2 className="m-0 p-0 xsm:text-2xl lg:text-3xl xsm:font-medium sm:font-semibold mt-10">
         Leave us a message

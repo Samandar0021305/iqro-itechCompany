@@ -47,7 +47,7 @@ function DevelopmentMobile() {
                       src={postEl.img}
                       alt=""
                     />
-                    <p className="text-center mt-1 text-[15px] md:text-[19px] lg:text-[21px] ">
+                    <p className="text-center mt-1 text-[15px] lg:text-[21px] ">
                       {postEl.text}
                     </p>
                   </li>

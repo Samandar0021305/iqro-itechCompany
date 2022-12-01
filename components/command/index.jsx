@@ -11,7 +11,7 @@ const Command = () => {
       <div className="sm:flex justify-between container mx-auto px-3">
         <div className="sm:w-2/3 py-12">
           <PageTitle id="Command" title="command" />
-          <p className="mt-40 xsm:text-md lg:text-2xl sm:mt-14 mb-5">
+          <p className="mt-40 xsm:text-md lg:text-2xl sm:mt-14 mb-8">
             {t("commandPage.text")}
           </p>
           <h4 className=" text-6xl lg:text-9xl text-blue font-bold">20+</h4>
