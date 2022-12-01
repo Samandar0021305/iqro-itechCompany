@@ -25,6 +25,7 @@ const Tools = () => {
               type="radio"
               value={item.label}
               name={item.name}
+              id={item.label}
               onChange={handleChange}
             />
             <label htmlFor={item.label}>{item.label}</label>

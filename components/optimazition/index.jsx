@@ -34,7 +34,7 @@ const OptimizationPage = ({ item }) => {
                 >
                   <Image
                     className=" w-[39px] md:w-[50px] lg:w-[70px]"
-                    src={item.img}
+                    src={item.img} alt=""
                   />
                   <div className="font-medium">{item.title}</div>
                 </div>
