@@ -1,7 +1,24 @@
 {
+  "input1":"Ism",
+  "input2":"Sizning elektron manzilingiz",
+  "input3":"Sizning raqamingiz",
   "hello": "Ga Xush kelibsiz",
   "Direction": "Yo'nalish",
   "Command": "Buyruq",
+
+  
+  "Analysis":"Tahlil",
+  "Offer":"Taklif",
+  "Team":"Jamoa",
+  "Start":"Boshlash",
+
+  
+  "Send us your":"Bizga loyiha so'rovingizni yoki loyiha g'oyangizni yuboring.",
+  "We will contact":"Loyiha talablaringizni aniqlashtirish uchun siz bilan bog'lanamiz.",
+  "We will provide":"Biz sizga bepul, majburiy bo'lmagan ilovamizni taqdim etamiz.",
+  "We provide a team":"Biz sizning talablaringiz uchun jamoani taqdim etamiz",
+  "You will get to ":"Siz jamoa bilan tanishasiz va biz boshlaymiz.",
+
   "home": {
     "header": "IT autsorsing agentligi"
   },

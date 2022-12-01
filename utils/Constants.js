@@ -198,7 +198,7 @@ export const Our = [
 export const WorkedList = [
   {
     img: work1,
-    title: "Contact",
+    title: "contact",
     text: "Send us your project request or project idea.",
   },
   {

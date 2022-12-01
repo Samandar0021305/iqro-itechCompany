@@ -1,8 +1,22 @@
 {
-
+  "input1":"Name",
+  "input2":"Your email",
+  "input3":"Your number",
    "in_collabration":"In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
     "Technologies":"Technologies",
   "hello": "welcome to",
+
+   "Analysis":"Analysis",
+   "Offer":"Offer",
+   "Team":"Team",
+   "Start":"Start",
+
+   "Send us your":"Send us your project request or project idea.",
+   "We will contact":"We will contact you to clarify your project requirements.",
+   "We will provide":"We will provide you with our free, non-binding application.",
+   "We provide a team":"We provide a team for your requirements",
+   "You will get to ":"You will get to know the team and we'll get started.",
+
   "home": {
     "header": "IT-Outsourcing Agency"
   },
@@ -35,6 +49,7 @@
     "our clients": "Our clients",
     "contact us": "Contact us"
   },
+    
   "commandPage": {
     "text": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
     "dedicated": "Dedicated team",
