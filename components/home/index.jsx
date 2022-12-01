@@ -10,7 +10,7 @@ const HomePage = () => {
   const { t } = useTranslation();
   return (
     <div className="container mx-auto">
-      <div className="sm:flex justify-center px-3 items-center text-center pb-3 sm:py-16 ">
+      <div className="sm:flex justify-center px-3 items-center text-center pb/-3 sm:py-16 ">
         <div className=" mb-15  sm:text-left sm:w-2/3 md:px-0">
           <div className="flex justify-center sm:justify-start">
             <Image
