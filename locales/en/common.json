@@ -1,25 +1,5 @@
 {
-          "hello":"welcome to",
-          "home": {
-            "header": "IT-Outsourcing Agency"
-          },
-          "Direction":"Direction",
-          "Command":"Command",
-          "Services":"Services",
-          "Tools":"Tools",
-          "Clients":"Clients",
-          "Portfolio":"Portfolio",
-          "About_Us":"About us",
-          "IT_consulting":"IT consulting",
-          "Development_of":"Development of mobile applications",
-          "Development_implementation":"Development and implementation ERP systems",
-          "User_interface":"User interface, User experience design",
-          "Business_It":"Business and IT Infrastructure Optimization and Automation",
-          "Information_technology":"Information technology Education center",
-          "Barber_shop":" Barber shop",
-          "Landing_page":"Landing page",
-          "in_collabration":"In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
-          "Technologies":"Technologies",
+  "hello": "welcome to",
   "home": {
     "header": "IT-Outsourcing Agency"
   },
@@ -38,12 +18,20 @@
   "Information_technology": "Information technology Education center",
   "Barber_shop": " Barber shop",
   "Landing_page": "Landing page",
+  "button" :"Contact",
   "titles": {
     "command": "Command",
     "optimization Infrastructures": "Optimization Infrastructures",
     "it consulting": "IT consulting",
     "it education centre": "IT Education centre",
-    "erp systems": "ERP systems"
+    "erp systems": "ERP systems",
+    "tools": "Tools",
+    "our services": "Our services",
+    "development of mobile applications": "Development of mobile applications",
+    "how we work": "How we work",
+    "our clients": "Our clients",
+    "contact us": "Contact us",
+    "ui/ux Design": "UI/UX Design"
   },
   "commandPage": {
     "text": "For each project, we form a team that includes a project manager, business analyst, UI / UX designer, DevOps, QA engineer, backend and front-end developers.",
@@ -51,6 +39,14 @@
     "text2": "IT Systems of any level of complexity at a convenient time for you",
     "text3": "IT Systems of any level of complexity at a convenient time for you",
     "text4": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
-    "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company"
+    "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
+    "text6": "In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
+    "text7": "Our company takes a human-centered approach to design"
+  },
+  "typed":{
+    "text1":"Development and implementation ERP systems",
+    "text2":"Development of web applications",
+    "text3":"User interface, User experience design",
+    "text4":"Optimization IT consalting and infrastructures"
   }
 }

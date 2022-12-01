@@ -1,28 +1,4 @@
 {
-<<<<<<< HEAD
-          "hello": "Ga Xush kelibsiz",
-          "Direction":"Yo'nalish",
-          "Command":"Buyruq",
-          "home":{
-            "header":"IT autsorsing agentligi"
-          },
-          "Services":"Xizmatlar",
-          "Tools":"Asboblar",
-          "Clients":"Mijozlar",
-          "Portfolio":"Portfolio",
-          "About_Us":"Biz haqimizda",
-          "IT_consulting":"IT konsalting",
-          "Development_of":"Mobil ilovalarni ishlab chiqish",
-          "Development_implementation":"ERP tizimlarini ishlab chiqish va joriy etish",
-          "User_interface":"Foydalanuvchi interfeysi, foydalanuvchi tajribasi dizayni",
-          "Business_It":"Biznes va IT infratuzilmasini optimallashtirish va avtomatlashtirish",
-          "Information_technology":"Axborot texnologiyalari ta'lim markazi",
-          "Barber_shop":" Sartaroshxona",
-          "Landing_page":"Ochilish sahifasi",
-          "in_collabration":"Startaplar bilan hamkorlikda biz mobil ilovalar uchun ijodiy va funksional foydalanuvchi interfeysini yaratishni o‘rgandik.",
-          "Technologies":"Texnologiyalar"
-}
-=======
   "hello": "Ga Xush kelibsiz",
   "Direction": "Yo'nalish",
   "Command": "Buyruq",
@@ -42,12 +18,21 @@
   "Information_technology": "Axborot texnologiyalari ta'lim markazi",
   "Barber_shop": " Sartaroshxona",
   "Landing_page": "Ochilish sahifasi",
+  "button": "Aloqa",
+
   "titles": {
     "command": "Buyruq",
     "optimization Infrastructures": "Infratuzilmalarni Optimallashtirish",
     "it consulting": "IT konsalting",
     "it education centre": "IT-ta'lim markazi",
-    "erp systems": "ERP tizimlari"
+    "erp systems": "ERP tizimlari",
+    "tools": "Texnalogiyalar",
+    "our services": "Xizmatlarimiz",
+    "development of mobile applications": "Mobil ilovalarni ishlab chiqish",
+    "how we work": "Biz qanday ishlaymiz",
+    "our clients": "Bizning mijozlarimiz",
+    "contact us": "Biz bilan bog`laning",
+    "ui/ux Design": "UI/UX dizayni"
   },
   "commandPage": {
     "text": "Har bir loyiha uchun biz loyiha menejeri, biznes-tahlilchi, UI / UX dizayneri, DevOps, QA muhandisi, backend va front-end ishlab chiquvchilarni o'z ichiga olgan jamoani shakllantiramiz.",
@@ -55,7 +40,14 @@
     "text2": "Siz uchun qulay vaqtda har qanday murakkablik darajasidagi IT tizimlari",
     "text3": "Siz uchun qulay vaqtda har qanday murakkablik darajasidagi IT tizimlari",
     "text4": "Biz sizning xodimlaringizning malakasini oshirib, kompaniyangiz samaradorligini oshirishimiz mumkin",
-    "text5": "Biz sizning xodimlaringizning malakasini oshirib, kompaniyangiz samaradorligini oshirishimiz mumkin"
+    "text5": "Biz sizning xodimlaringizning malakasini oshirib, kompaniyangiz samaradorligini oshirishimiz mumkin",
+    "text6": "Startaplar bilan hamkorlikda biz mobil ilovalar uchun ijodiy va funksional foydalanuvchi interfeysini yaratishni o‘rgandik.",
+    "text7": "Kompaniyamiz dizaynga insonga asoslangan yondashuvni qo'llaydi"
+  },
+  "typed": {
+    "text1": "ERP tizimlarini ishlab chiqish va joriy etish",
+    "text2": "Veb-ilovalarni ishlab chiqish",
+    "text3": "Foydalanuvchi interfeysi, foydalanuvchi tajribasi dizayni",
+    "text4": "IT konsalting va infratuzilmalarni optimallashtirish"
   }
 }
->>>>>>> aa6f457885625f61e6139c81d3039e8a0736cf50
