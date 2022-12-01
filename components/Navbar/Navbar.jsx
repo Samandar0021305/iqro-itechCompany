@@ -5,6 +5,8 @@ import NavLogo from "../../assets/navbar-logo.svg";
 import Image from "next/image";
 import { NavbarList } from "../../utils/Constants";
 import Button from "../BaseButton/BaseButton";
+import menu from "../../assets/menu.png"
+import Toogler1 from "../../assets/toogler1.png"
 
 
 export const getStaticProps = async ({ locale }) => ({
@@ -15,11 +17,18 @@ export const getStaticProps = async ({ locale }) => ({
 
 function Navbar() {
   // const [toogleEl,setToogleEl] = useState(false)
+  const [toogler,setToogler] = useState(true);
   const [hidden, sethidden] = useState("hidden");
-  const classes = `${hidden} bg-[#E9F7FF] absolute h-[100vh] pt-36 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
+  const classes = `${hidden} bg-[#E9F7FF] absolute  h-[100vh+20px] pt-24 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
   const toogle = () => {
     hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+    setToogler(pre => !pre)
   };
+const TooglerHandler = ()=>{
+  setToogler(pre => !pre)
+  hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+
+}
 
   const background = {
     background: "#159EEC",
@@ -50,7 +59,7 @@ function Navbar() {
         </div>
         <div className="flex items-center sm:ml-auto sm:mr-4  ml-auto">
           <ul className="flex space-x-10 items-center text-gray-600 dark:text-gray-100 mt-0.5 font-400  font-normal text-sm capitalize">
-            {navTextList.map((post, index) => {
+            {navTextList.map(post => {
               return (
                 <li
                   className="hover:text-gray-500  mr-5 items-center justify-center lg:flex hidden "
@@ -80,22 +89,25 @@ function Navbar() {
                 className="flex items-center justify-center"
                 href="tel:998930026613"
               >
-                {t("button")}
+                {t('contact')}
               </a>
             </li>
           </ul>
         </div>
-        <div
+        {
+          toogler ? <Image
           onClick={toogle}
-          className="space-y-1 visible lg:hidden cursor-pointer z-40"
-        >
-          <div className="w-6 h-0.5 bg-black"></div>
-          <div className="w-6 h-0.5 bg-black"></div>
-          <div className="w-6 h-0.5 bg-black"></div>
-        </div>
+          src={menu}
+          alt=""
+          className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
+        /> : <Image alt="safasfas" src={Toogler1} onClick={TooglerHandler} 
+         className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
+        />
+        }  
         <ul className={classes}>
           {navTextList.map((post, id) => {
-            return <li key={post.id + 15}>{t(post.text)}</li>;
+            return <li key={post.id + 15}> <a href={post.key}>
+              {t(post.text)}</a></li>;
           })}
           <Button className="bg-blue py-3 px-10"> Contact </Button>
         </ul>

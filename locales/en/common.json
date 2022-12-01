@@ -1,8 +1,12 @@
 {
+
+   "in_collabration":"In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
+    "Technologies":"Technologies",
   "hello": "welcome to",
   "home": {
     "header": "IT-Outsourcing Agency"
   },
+  "contact":"contact",
   "Direction": "Direction",
   "Command": "Command",
   "Services": "Services",

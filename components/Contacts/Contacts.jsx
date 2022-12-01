@@ -11,8 +11,7 @@ const Contacts = (props) => {
       <PageTitle title="contact us" />
       <h2 className="m-0 p-0 xsm:text-2xl lg:text-3xl xsm:font-medium sm:font-semibold mt-10">
         Leave us a message
-      </h2>
-
+      </h2> 
       <div className="sm:flex gap-7  justify-between items-start ">
         <form className="flex flex-col mb-16 w-full sm:w-1/2 ">
           {inputs.map((inputEl, id) => {

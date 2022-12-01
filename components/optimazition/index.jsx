@@ -9,7 +9,7 @@ const OptimizationPage = ({ item }) => {
   return (
     <div className={`bg-${color} bg-opacity-20 relative `}>
       <div className="container mx-auto py-[40px] px-3  sm:py-[60px]">
-        <PageTitle title={title} />
+        <PageTitle id='Portfolio' title={title} />
         <div
           className={`sm:flex ${flex} justify-between  gap-5  sm:my-[40px] md:my-[20px] `}
         >
@@ -34,7 +34,7 @@ const OptimizationPage = ({ item }) => {
                 >
                   <Image
                     className=" w-[39px] md:w-[50px] lg:w-[70px]"
-                    src={item.img}
+                    src={item.img} alt=""
                   />
                   <div className="font-medium">{item.title}</div>
                 </div>

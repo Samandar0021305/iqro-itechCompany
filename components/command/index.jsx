@@ -10,7 +10,7 @@ const Command = () => {
     <div className="bg-blue bg-opacity-20 relative">
       <div className="sm:flex justify-between container mx-auto px-3">
         <div className="sm:w-2/3 py-12">
-          <PageTitle title="command" />
+          <PageTitle id="Command" title="command" />
           <p className="mt-40 xsm:text-md lg:text-2xl sm:mt-14 mb-5">
             {t("commandPage.text")}
           </p>
@@ -28,7 +28,7 @@ const Command = () => {
           <Image
             src={command}
             alt="image of robotic"
-            className="xsm:block absolute top-0 right-0 xsm:right-10 sm:hidden"
+            className="xsm:block absolute top-0 right-0 xsm:right-8 sm:hidden"
             width={140}
           />
         </div>

@@ -89,32 +89,32 @@ export let Services = [
 
 export const NavbarList = [
   {
-    key: "Direction",
+    key: "#Direction",
     text: "Direction",
     id: 1,
   },
   {
-    key: "Command",
+    key: "#Command",
     text: "Command",
     id: 2,
   },
   {
-    key: "Services",
+    key: "#Services",
     text: "Services",
     id: 3,
   },
   {
-    key: "Tools",
+    key: "#Tools",
     text: "Tools",
     id: 4,
   },
   {
-    key: "Clients",
+    key: "#Clients",
     text: "Clients",
     id: 5,
   },
   {
-    key: "Portfolio",
+    key: "#Portfolio",
     text: "Portfolio",
     id: 6,
   },
