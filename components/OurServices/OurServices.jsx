@@ -22,7 +22,10 @@ const OurServices = () => {
               </p>
               <div className="relative w-[50%]">
                 <Image
-                  className={`block xl:w-[170px] absolute ${postEl.position} `}
+                  className={` ${
+                    id == 1 || 2 || 3 || 4 || 6 ? "bottom-0" : "top-0"
+                  }
+                  block xl:w-[170px] absolute ${postEl.position}`}
                   src={postEl.img}
                   alt="section part images"
                 />

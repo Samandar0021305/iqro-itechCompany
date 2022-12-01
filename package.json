@@ -9,8 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mobiscroll/react-lite": "^4.10.9",
     "eslint": "8.28.0",
     "eslint-config-next": "13.0.4",
+    "mobiscroll": "^3.0.0-beta6",
+    "mobiscroll-react": "^4.0.0",
     "next": "13.0.4",
     "next-i18next": "^13.0.0",
     "react": "18.2.0",

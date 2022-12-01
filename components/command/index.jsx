@@ -28,7 +28,7 @@ const Command = () => {
           <Image
             src={command}
             alt="image of robotic"
-            className="xsm:block absolute top-0 right-0 xsm:right-10 sm:hidden"
+            className="xsm:block absolute top-0 right-0 xsm:right-8 sm:hidden"
             width={140}
           />
         </div>

@@ -1,37 +1,34 @@
+import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import React from "react";
-import { Dev, Development } from "../../utils/Constants";
-import { useTranslation } from "next-i18next";
-import Img from "../../assets/DevelopmentMobileBg.png";
+import {  design, ui } from "../../utils/Constants";
 import PageTitle from "../resuable/PageTitle";
+import Img from "../../assets/DevelopmentMobileBg.png";
+import uiPic from "../../assets/uiPic.png";
 
-function DevelopmentMobile() {
+const UiDesign = () => {
   const { t } = useTranslation("common");
-
   return (
     <div className="px-3 container mx-auto pb-12 sm:pb-0  pt-10   md:pt-14 md:pb-2">
-      <PageTitle title="development of mobile applications" />
+      <PageTitle title="ui/ux Design" />
 
       <div className=" bg-white sm:bg-opacity-20  lg:bg-opacity-20 mt-[50px] sm:mt-[0] sm:pb-[60px]">
         <div className="flex flex-col-reverse sm:flex-row justify-between gap-10 mx-auto">
           <div className="w-[100%] sm:w-[50%]">
-            <p className="lg:w-11/12   sm:mt-[30px] lg:mt-[50px] xsm:text-md lg:text-[28px]  mb-5">
-              {t("commandPage.text6")}
-            </p>
-            <ul className="flex justify-between items-center gap-1  mt-[30px]">
-              {Development.map((post) => {
+            <ul className="flex justify-center xsm:justify-between items-center flex-wrap gap-2 lg:gap-4 sm:mt-20">
+              {design.map((post,id) => {
                 return (
-                  <div
-                    key={post.id}
+                  <li
+                    key={id}
                     className="bg-blue flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
                   >
                     <Image
                       className=" w-[39px] md:w-[50px] lg:w-[70px]"
-                      src={post.src}
+                      src={post.img}
                       alt=""
                     />
-                    <div className="font-medium">{post.title}</div>
-                  </div>
+                    <div className="font-medium">{post.text}</div>
+                  </li>
                 );
               })}
             </ul>
@@ -39,7 +36,7 @@ function DevelopmentMobile() {
               {t("Technologies")}
             </h2>
             <ul className="mt-[20px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
-              {Dev.map((postEl, id) => {
+              {ui.map((postEl, id) => {
                 return (
                   <li key={id}>
                     <Image
@@ -55,17 +52,10 @@ function DevelopmentMobile() {
               })}
             </ul>
           </div>
-          <div className="sm:w-[50%] ">
-            <Image
-              src={Img}
-              className=" sm:w-[300px] md:w-[350px] lg:w-[450px] xl:w-[500px] ml-auto rounded"
-              alt="image of mobile phone"
-            />
-          </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default DevelopmentMobile;
+export default UiDesign;

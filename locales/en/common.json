@@ -10,7 +10,8 @@
    "Offer":"Offer",
    "Team":"Team",
    "Start":"Start",
-
+   "Briefly describe your project":"Briefly describe your project",
+  "Send":" Send",
    "Send us your":"Send us your project request or project idea.",
    "We will contact":"We will contact you to clarify your project requirements.",
    "We will provide":"We will provide you with our free, non-binding application.",
@@ -36,6 +37,7 @@
   "Information_technology": "Information technology Education center",
   "Barber_shop": " Barber shop",
   "Landing_page": "Landing page",
+  "button" :"Contact",
   "titles": {
     "command": "Command",
     "optimization Infrastructures": "Optimization Infrastructures",
@@ -47,7 +49,8 @@
     "development of mobile applications": "Development of mobile applications",
     "how we work": "How we work",
     "our clients": "Our clients",
-    "contact us": "Contact us"
+    "contact us": "Contact us",
+    "ui/ux Design": "UI/UX Design"
   },
     
   "commandPage": {
@@ -56,6 +59,14 @@
     "text2": "IT Systems of any level of complexity at a convenient time for you",
     "text3": "IT Systems of any level of complexity at a convenient time for you",
     "text4": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
-    "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company"
+    "text5": "We can improve the qualifications of your employees thereby increasing the efficiency of your company",
+    "text6": "In collaboration with startups, we have learned how to create a creative and functional user interface for mobile applications.",
+    "text7": "Our company takes a human-centered approach to design"
+  },
+  "typed":{
+    "text1":"Development and implementation ERP systems",
+    "text2":"Development of web applications",
+    "text3":"User interface, User experience design",
+    "text4":"Optimization IT consalting and infrastructures"
   }
 }

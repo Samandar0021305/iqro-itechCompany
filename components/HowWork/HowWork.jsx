@@ -18,7 +18,7 @@ const HowWork = () => {
                 <Image src={post.img} className="text-center md:ml-3" alt="" />
                 <span className="flex flex-col ml-5">
                   <h4 className='md:text-center md:mt-1 mb-1   md:text-[21px] text-[16px] text-blackDev'>{t(post.title)}</h4>
-                  <p className='md:text-center lg:text-[16px] text-[12px]'>{post.text}</p>
+                  <p className='md:text-center lg:text-[16px] text-[12px]'>{t(post.text)}</p>
                 </span>
               </li>
             )

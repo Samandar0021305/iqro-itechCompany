@@ -52,6 +52,64 @@ import Robo4 from "../assets/svgRobo/Robo4.svg";
 import Robo5 from "../assets/svgRobo/Robo5.svg";
 import Robo6 from "../assets/svgRobo/Robo6.svg";
 
+import ux1 from "../assets/svgIcons/ux1.svg";
+import ux2 from "../assets/svgIcons/ux2.svg";
+import ux3 from "../assets/svgIcons/ux3.svg";
+import ux4 from "../assets/svgIcons/ux4.svg";
+import ux5 from "../assets/svgIcons/ux5.svg";
+import ux6 from "../assets/svgIcons/ux6.svg";
+
+import ui1 from "../assets/svgIcons/ui1.svg";
+import ui2 from "../assets/svgIcons/ui2.svg";
+import ui3 from "../assets/svgIcons/ui3.svg";
+import ui4 from "../assets/svgIcons/ui4.svg";
+
+export const ui = [
+  {
+     text:"Figma",
+      img:ui1,
+   },
+  {
+     text:"Sketch",
+      img:ui2,
+   },
+  {
+     text:"Lottie",
+      img:ui3,
+   },
+  {
+     text:"Illustrator",
+      img:ui4,
+   },
+]
+
+export const design =[
+  {
+    text:"UX",
+    img:ux1
+  },
+  {
+    text:"UI",
+    img:ux2
+  },
+  {
+    text:"Prototoyping",
+    img:ux3
+  },
+  {
+    text:"Mobile Design",
+    img:ux4
+  },
+  {
+    text:"Web design",
+    img:ux5
+  },
+  {
+    text:"Atomic Design",
+    img:ux6
+  }
+]
+
 export let Services = [
   {
     post: "Development_of",
@@ -199,27 +257,27 @@ export const WorkedList = [
   {
     img: work1,
     title: "contact",
-    text: "Send us your project request or project idea.",
+    text: "Send us your",
   },
   {
     img: work2,
     title: "Analysis",
-    text: "We will contact you to clarify your project requirements.",
+    text: "We will contact",
   },
   {
     img: work3,
     title: "Offer",
-    text: "We will provide you with our free, non-binding application.",
+    text: "We will provide",
   },
   {
     img: work4,
     title: "Team",
-    text: "We provide a team for your requirements.",
+    text: "We provide a team",
   },
   {
     img: work5,
     title: "Start",
-    text: "You will get to know the team and we'll get started.",
+    text: "You will get to",
   },
 ];
 
@@ -240,6 +298,38 @@ export const Development = [
     id: 3,
   },
 ];
+export const Development1 = [
+  {
+    title: "iOS",
+    src: imgI1,
+    id: 1,
+  },
+  {
+    title: "Android",
+    src: imgI2,
+    id: 2,
+  },
+  {
+    title: "Android",
+    src: imgI3,
+    id: 3,
+  },
+  {
+    title: "iOS",
+    src: imgI1,
+    id: 4,
+  },
+  {
+    title: "Android",
+    src: imgI2,
+    id: 5,
+  },
+  {
+    title: "Android",
+    src: imgI3,
+    id: 6,
+  },
+];
 
 export let Dev = [
   {
@@ -255,6 +345,25 @@ export let Dev = [
     img: Dev3,
   },
 ];
+export let Dev12 = [
+  {
+    text: "Swift",
+    img: Dev1,
+  },
+  {
+    text: "Kotlin",
+    img: Dev2,
+  },
+  {
+    text: "Flutter",
+    img: Dev3,
+  },
+  {
+    text: "Flutter",
+    img: Dev3,
+  },
+];
+
 
 export const inputs = [
   {
