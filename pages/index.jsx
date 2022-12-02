@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -33,18 +33,18 @@ export const getStaticProps = async ({ locale }) => ({
 function Home() {
   const router = useRouter();
 
-  const [toogler,setToogler] = useState(true);
+  const [toogler, setToogler] = useState(true);
   const [hidden, sethidden] = useState("hidden");
   const classes = `${hidden} bg-[#E9F7FF] absolute  h-[100vh] pt-24 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
   const toogle = () => {
     hidden == "hidden" ? sethidden("none") : sethidden("hidden");
     setToogler(pre => !pre)
   };
-const TooglerHandler = ()=>{
-  setToogler(pre => !pre)
-  hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+  const TooglerHandler = () => {
+    setToogler(pre => !pre)
+    hidden == "hidden" ? sethidden("none") : sethidden("hidden");
 
-}
+  }
   const background = {
     background: "#159EEC",
     display: "flex",
@@ -55,37 +55,37 @@ const TooglerHandler = ()=>{
   };
   return (
     <>
-    <AnimatedCursor
-      innerSize={14}
-      outerSize={14}
-      color='193, 11, 111'
-      outerAlpha={0.2}
-      innerScale={0.7}
-      outerScale={5}
-      
-    />
-<Navbar classes={classes} background={background} 
-      TooglerHandler={TooglerHandler}
-      toogle={toogle}
-      toogler={toogler}
+      <AnimatedCursor
+        innerSize={14}
+        outerSize={14}
+        color='193, 11, 111'
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+
+      />
+      <Navbar classes={classes} background={background}
+        TooglerHandler={TooglerHandler}
+        toogle={toogle}
+        toogler={toogler}
       />
       {
-       toogler ? <>
-       
-       <HomePage />
-       <OurServices />
-       <Command />
-       <DevelopmentMobile />
-       <OptimizationPage item={erpSystems} />
-       <UiDesign />
-       {optimalComponents.map((item) => (
-         <OptimizationPage key={item.id} item={item} />
-       ))}
-       <Tools />
-       <OurClients />
-       <HowWork />
-       <Contacts />
-       <Footer /></> : "" 
+        toogler ? <>
+
+          <HomePage />
+          <OurServices />
+          <Command />
+          <DevelopmentMobile />
+          <OptimizationPage item={erpSystems} />
+          <UiDesign />
+          {optimalComponents.map((item) => (
+            <OptimizationPage key={item.id} item={item} />
+          ))}
+          <Tools />
+          <OurClients />
+          <HowWork />
+          <Contacts />
+          <Footer /></> : ""
       }
 
     </>

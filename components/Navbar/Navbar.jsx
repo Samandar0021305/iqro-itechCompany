@@ -9,11 +9,6 @@ import menu from "../../assets/menu.png"
 import Toogler1 from "../../assets/toogler1.png"
 
 
-import UZB from "../../assets/svgIcons/uzbekistan-flag-round-circle-icon.svg";
-import ENG from "../../assets/svgIcons/english.svg";
-import RUS from "../../assets/svgIcons/russia-flag-icon.svg"
-import { Select, Page, setOptions } from '@mobiscroll/react-lite';
-
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
@@ -23,7 +18,7 @@ export const getStaticProps = async ({ locale }) => ({
 
 
 function Navbar(props) {
-  const {classes,background,TooglerHandler,toogle,toogler} = props
+  const { classes, background, TooglerHandler, toogle, toogler } = props
   const router = useRouter();
   const handleLocaleChange = (event) => {
     const value = event.target.value;
@@ -63,7 +58,7 @@ function Navbar(props) {
                 onChange={handleLocaleChange}
                 className="text-gray-600 bg-[#fff] mr-6"
                 value={router.locale}>
-                 <option value="ru">RUS</option>
+                <option value="ru">RUS</option>
                 <option value="en">Eng</option>
                 <option value="uz">UZB</option>
               </select>
@@ -81,14 +76,14 @@ function Navbar(props) {
         </div>
         {
           toogler ? <Image
-          onClick={toogle}
-          src={menu}
-          alt=""
-          className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
-        /> : <Image alt="safasfas" src={Toogler1} onClick={TooglerHandler} 
-         className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
-        />
-        }  
+            onClick={toogle}
+            src={menu}
+            alt=""
+            className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
+          /> : <Image alt="safasfas" src={Toogler1} onClick={TooglerHandler}
+            className="space-y-1 visible w-[24px] h-[24px] lg:hidden cursor-pointer z-40"
+          />
+        }
         <ul className={classes}>
           {navTextList.map((post, id) => {
             return <li key={post.id + 15}> <a href={post.key}>
