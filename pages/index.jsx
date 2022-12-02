@@ -1,3 +1,4 @@
+import React,{useState} from "react";
 import { useRouter } from "next/router";
 import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
@@ -14,7 +15,7 @@ import Tools from "../components/tools";
 import { optimalComponents, erpSystems } from "../utils/Constants";
 import { fields } from "../utils/feilds";
 import UiDesign from "../components/ui";
-
+import Navbar from "../components/Navbar/Navbar";
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
@@ -23,28 +24,53 @@ export const getStaticProps = async ({ locale }) => ({
 
 function Home() {
   const router = useRouter();
-  const { locale } = router;
-  const { t } = useTranslation("common");
 
-  const onSubmit = (values) => {
-    console.log(values);
+  const [toogler,setToogler] = useState(true);
+  const [hidden, sethidden] = useState("hidden");
+  const classes = `${hidden} bg-[#E9F7FF] absolute  h-[100vh] pt-24 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
+  const toogle = () => {
+    hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+    setToogler(pre => !pre)
+  };
+const TooglerHandler = ()=>{
+  setToogler(pre => !pre)
+  hidden == "hidden" ? sethidden("none") : sethidden("hidden");
+
+}
+  const background = {
+    background: "#159EEC",
+    display: "flex",
+    color: "white",
+    borderRadius: "20px",
+    width: "70px",
+    height: "30px",
   };
   return (
     <>
-      <HomePage />
-      <OurServices />
-      <Command />
-      <DevelopmentMobile />
-      <OptimizationPage item={erpSystems} />
-      <UiDesign />
-      {optimalComponents.map((item) => (
-        <OptimizationPage key={item.id} item={item} />
-      ))}
-      <Tools />
-      <OurClients />
-      <HowWork />
-      <Contacts />
-      <Footer />
+      <Navbar classes={classes} background={background} 
+      TooglerHandler={TooglerHandler}
+      toogle={toogle}
+      toogler={toogler}
+      />
+      {
+       toogler ? <>
+       
+       <HomePage />
+       <OurServices />
+       <Command />
+       <DevelopmentMobile />
+       <OptimizationPage item={erpSystems} />
+       <UiDesign />
+       {optimalComponents.map((item) => (
+         <OptimizationPage key={item.id} item={item} />
+       ))}
+       <Tools />
+       <OurClients />
+       <HowWork />
+       <Contacts />
+       <Footer /></> : "" 
+      }
+
     </>
   );
 }
