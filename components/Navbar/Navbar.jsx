@@ -29,7 +29,7 @@ function Navbar(props) {
   const { t } = useTranslation("common");
   const [navTextList, setnavTextList] = useState(NavbarList);
   return (
-    <nav className="w-full mt-2 top-0 bg-white z-10 dark:bg-slate-900">
+    <nav className="w-full mt-2 top-0 bg-[#fff] shadow-md z-10 dark:bg-slate-900 sticky ">
       <div className="container  pl-2 mx-auto py-5 flex sm:pl-2 sm:pr-2 pr-2 items-center md:justify-between justify-center">
         <div className="flex items-center gap-2 cursor-pointer">
           <Image

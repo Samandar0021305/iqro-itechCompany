@@ -11,7 +11,6 @@ import { useTranslation } from "next-i18next";
 
 const Contacts = () => {
   const { t } = useTranslation("common");
-  // console.log(t);
   let send = 'Send'
   const inputs = [
     {
