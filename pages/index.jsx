@@ -14,7 +14,8 @@ import Tools from "../components/tools";
 import { optimalComponents, erpSystems } from "../utils/Constants";
 import { fields } from "../utils/feilds";
 import UiDesign from "../components/ui";
-
+import Image from 'next/image';
+// import ImageGif from 'https://i.pinimg.com/originals/85/04/77/850477fed08bfe98598082bcd309ce70.gif'
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
@@ -35,10 +36,10 @@ function Home() {
       <OurServices />
       <Command />
       <DevelopmentMobile />
-      <OptimizationPage item={erpSystems} />
+      <OptimizationPage item={erpSystems}  index={20}/>
       <UiDesign />
-      {optimalComponents.map((item) => (
-        <OptimizationPage key={item.id} item={item} />
+      {optimalComponents.map((item,index) => (
+        <OptimizationPage key={item.id} item={item} index={index}/>
       ))}
       <Tools />
       <OurClients />
