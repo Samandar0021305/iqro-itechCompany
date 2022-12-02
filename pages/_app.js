@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"  />
     </Head>
+    
     <Component {...pageProps}  />
   </>
 }

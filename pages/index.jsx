@@ -13,9 +13,17 @@ import Contacts from "../components/Contacts/Contacts";
 import OptimizationPage from "../components/optimazition";
 import Tools from "../components/tools";
 import { optimalComponents, erpSystems } from "../utils/Constants";
-import { fields } from "../utils/feilds";
+
 import UiDesign from "../components/ui";
 import Navbar from "../components/Navbar/Navbar";
+
+import dynamic from 'next/dynamic'
+
+export const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+  ssr: false
+});
+
+
 export const getStaticProps = async ({ locale }) => ({
   props: {
     ...(await serverSideTranslations(locale, ["common"])),
@@ -47,7 +55,16 @@ const TooglerHandler = ()=>{
   };
   return (
     <>
-      <Navbar classes={classes} background={background} 
+    <AnimatedCursor
+      innerSize={14}
+      outerSize={14}
+      color='193, 11, 111'
+      outerAlpha={0.2}
+      innerScale={0.7}
+      outerScale={5}
+      
+    />
+<Navbar classes={classes} background={background} 
       TooglerHandler={TooglerHandler}
       toogle={toogle}
       toogler={toogler}
