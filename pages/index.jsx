@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { useRouter } from "next/router";
-import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import HomePage from "../components/home/index";
 import Command from "../components/command/index";
@@ -31,7 +29,6 @@ export const getStaticProps = async ({ locale }) => ({
 });
 
 function Home() {
-  const router = useRouter();
 
   const [toogler, setToogler] = useState(true);
   const [hidden, sethidden] = useState("hidden");

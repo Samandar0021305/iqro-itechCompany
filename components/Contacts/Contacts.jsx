@@ -11,35 +11,35 @@ import { useTranslation } from "next-i18next";
 
 const Contacts = () => {
   const { t } = useTranslation("common");
-// console.log(t);
+  // console.log(t);
   let send = 'Send'
   const inputs = [
     {
-        type:"text",
-        placeholder:"input1",
-        name:"name",
-        style:"sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"  
+      type: "text",
+      placeholder: "input1",
+      name: "name",
+      style: "sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
     },
     {
-        type:"email",
-        name:"email",
-        placeholder:"input2",
-        style:"sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded" 
+      type: "email",
+      name: "email",
+      placeholder: "input2",
+      style: "sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
     },
     {
-        type:"text",
-        name:"number",
-        placeholder:"input3", 
-        style:"sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
+      type: "text",
+      name: "number",
+      placeholder: "input3",
+      style: "sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
     }
-   ]
+  ]
   let textareaElement = 'Briefly describe your project'
   return (
     <div className="container px-3 mx-auto mb-[30px] py-12">
       <PageTitle title="contact us" />
       <h2 className="m-0 p-0 xsm:text-2xl lg:text-3xl xsm:font-medium sm:font-semibold mt-10">
         Leave us a message
-      </h2> 
+      </h2>
       <div className="sm:flex gap-7  justify-between items-start ">
         <form className="flex flex-col mb-16 w-full sm:w-1/2 ">
           {inputs.map((inputEl, id) => {
