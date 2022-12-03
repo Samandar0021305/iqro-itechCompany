@@ -28,7 +28,7 @@ function Home() {
   const { t } = useTranslation("common");
 
   const onSubmit = (values) => {
-    console.log(values);
+    // console.log(values);
   };
   return (
     <>
