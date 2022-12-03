@@ -18,7 +18,7 @@ export const getStaticProps = async ({ locale }) => ({
 
 
 function Navbar(props) {
-  const { classes, background, TooglerHandler, toogle, toogler } = props
+  const { classes, background, TooglerHandler, toogle, toogler,navbarHanlder } = props
   const router = useRouter();
   const handleLocaleChange = (event) => {
     const value = event.target.value;
@@ -86,7 +86,7 @@ function Navbar(props) {
         }
         <ul className={classes}>
           {navTextList.map((post, id) => {
-            return <li key={post.id + 15}> <a href={post.key}>
+            return <li key={post.id + 15}> <a onClick={navbarHanlder} href={post.key}>
               {t(post.text)}</a></li>;
           })}
           <Button className="bg-blue py-3 px-10"> Contact </Button>
