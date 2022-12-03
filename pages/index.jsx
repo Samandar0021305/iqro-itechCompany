@@ -25,7 +25,7 @@ export const getStaticProps = async ({ locale }) => ({
 });
 
 function Home() {
-  const [tooglerElement,setTooglerElement] = useState(true)
+  const [tooglerElement, setTooglerElement] = useState(true)
   const [toogler, setToogler] = useState(true);
   const [hidden, sethidden] = useState("hidden");
   const classes = `${hidden} bg-[#E9F7FF] absolute  h-[100vh] pt-24 left-0 top-0 w-full p-10 rounded-b-3xl z-30 space-y-10 text-white text-center`;
@@ -33,9 +33,9 @@ function Home() {
     hidden == "hidden" ? sethidden("none") : sethidden("hidden");
     setToogler(pre => !pre)
   };
-  const navbarHanlder=()=>{
-    setToogler(p=>true)
-    setTooglerElement(p=>!p)
+  const navbarHanlder = () => {
+    setToogler(p => true)
+    setTooglerElement(p => !p)
     hidden == "hidden" ? sethidden("none") : sethidden("hidden");
 
   }
@@ -53,7 +53,7 @@ function Home() {
     height: "30px",
   };
   return (
-<>
+    <>
       <AnimatedCursor
         innerSize={14}
         outerSize={14}

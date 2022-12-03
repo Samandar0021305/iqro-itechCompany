@@ -45,6 +45,14 @@ import Dev1 from "../assets/dev.png";
 import Dev2 from "../assets/development2.png";
 import Dev3 from "../assets/development3.png";
 
+import crm1 from "../assets/svgIcons/crm1.svg"
+import crm2 from "../assets/svgIcons/crm2.svg"
+import crm3 from "../assets/svgIcons/crm3.svg"
+import crm4 from "../assets/svgIcons/crm4.svg"
+import crm5 from "../assets/svgIcons/crm5.svg"
+import crm6 from "../assets/svgIcons/crm6.svg"
+
+
 import Robo1 from "../assets/svgRobo/Robo1.svg";
 import Robo2 from "../assets/svgRobo/Robo2.svg";
 import Robo3 from "../assets/svgRobo/Robo3.svg";
@@ -66,47 +74,47 @@ import ui4 from "../assets/svgIcons/ui4.svg";
 
 export const ui = [
   {
-     text:"Figma",
-      img:ui1,
-   },
+    text: "Figma",
+    img: ui1,
+  },
   {
-     text:"Sketch",
-      img:ui2,
-   },
+    text: "Sketch",
+    img: ui2,
+  },
   {
-     text:"Lottie",
-      img:ui3,
-   },
+    text: "Lottie",
+    img: ui3,
+  },
   {
-     text:"Illustrator",
-      img:ui4,
-   },
+    text: "Illustrator",
+    img: ui4,
+  },
 ]
 
-export const design =[
+export const design = [
   {
-    text:"UX",
-    img:ux1
+    text: "UX",
+    img: ux1
   },
   {
-    text:"UI",
-    img:ux2
+    text: "UI",
+    img: ux2
   },
   {
-    text:"Prototoyping",
-    img:ux3
+    text: "Prototoyping",
+    img: ux3
   },
   {
-    text:"Mobile Design",
-    img:ux4
+    text: "Mobile Design",
+    img: ux4
   },
   {
-    text:"Web design",
-    img:ux5
+    text: "Web design",
+    img: ux5
   },
   {
-    text:"Atomic Design",
-    img:ux6
+    text: "Atomic Design",
+    img: ux6
   }
 ]
 
@@ -401,6 +409,8 @@ export const localization = [
   },
 ];
 
+
+
 export const optimalComponents = [
   {
     id: 1,
@@ -460,12 +470,12 @@ export const erpSystems = {
   image: Desktop4,
   flex: "",
   arr: [
-    { id: 1, title: "Architecture", img: archer },
-    { id: 2, title: "Devops", img: devops },
-    { id: 3, title: "UX/UI", img: ux },
-    { id: 4, title: "Backend", img: backend },
-    { id: 5, title: "Frontend", img: frontend },
-    { id: 6, title: "SMM", img: mobile },
+    { id: 1, title: "CRM", img: crm1 },
+    { id: 2, title: "eLearning", img: crm2 },
+    { id: 3, title: "E-Commerce", img: crm3 },
+    { id: 4, title: "POS", img: crm4 },
+    { id: 5, title: "SMS / Email", img: crm5 },
+    { id: 6, title: "Warehouse", img: crm6 },
   ],
 };
 
