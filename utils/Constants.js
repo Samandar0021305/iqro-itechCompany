@@ -73,6 +73,33 @@ import React from "../assets/tools/React.png";
 import sass from "../assets/tools/sass.png";
 import Sketch from "../assets/tools/Sketch.png";
 import Swift from "../assets/tools/Swift.png";
+import GoogleCloud from "../assets/tools/GoogleCloud.png";
+import MongoDB from "../assets/tools/MongoDB.png";
+import cassandra from "../assets/tools/cassandra.png";
+import Kubernetes from "../assets/tools/Kubernetes.png";
+import Promotheus from "../assets/tools/Promotheus.png"; // database
+import DigitalOcean from "../assets/tools/DigitalOcean.png"; // deveops
+import Elastic from "../assets/tools/Elastic.png"; // security
+import Grafana from "../assets/tools/Grafana.png"; // data  base
+import Terraform from "../assets/tools/Terraform.png"; // secure
+import Flutter from "../assets/tools/Flutter.png"; // mobile
+import Ant from "../assets/tools/Ant.png"; // front
+import Gatsby from "../assets/tools/Gatsby.png"; // react build
+import Vue from "../assets/tools/Vue.png"; // vue
+import Adobe from "../assets/tools/Adobe.png"; //  design
+import Youtrack from "../assets/tools/Youtrack.png"; //  design
+import Appium from "../assets/tools/Appium.png"; //  test
+import MUI from "../assets/tools/MUI.png"; //  frontend
+import Abdobel from "../assets/tools/Adobel.png"; //  design
+import Unknown1 from "../assets/tools/Unknown1.png"; //  design
+import Unknown2 from "../assets/tools/Unknown2.png"; //  design
+import Unknown3 from "../assets/tools/Unknown3.png"; //  design
+import Unknown4 from "../assets/tools/Unknown4.png"; //  design
+import Unknown5 from "../assets/tools/Unknown5.png"; //  design
+import Unknown6 from "../assets/tools/Unknown6.png"; //  design
+import Unknown7 from "../assets/tools/Unknown7.png"; //  design
+import Unknown8 from "../assets/tools/Unknown8.png"; //  design
+import Unknown9 from "../assets/tools/Unknown9.png"; //  design
 
 export let Services = [
   {
@@ -443,54 +470,61 @@ export const radioButtons = [
 ];
 
 export const tools = [
-  { id: 1, title: "Promotheus", image: "", status: "Devops" },
-  { id: 2, title: "Promotheus", image: "", status: "Devops" },
-  { id: 3, title: "Promotheus", image: "", status: "Devops" },
-  { id: 4, title: "Promotheus", image: "", status: "Devops" },
-  { id: 5, title: "Promotheus", image: "", status: "Devops" },
-  { id: 6, title: "Promotheus", image: "", status: "Devops" },
-  { id: 7, title: "Promotheus", image: "", status: "Devops" },
-  { id: 8, title: "Promotheus", image: "", status: "Backend" },
-  { id: 9, title: "Promotheus", image: "", status: "Backend" },
-  { id: 10, title: "Promotheus", image: "", status: "Backend" },
-  { id: 11, title: "Promotheus", image: "", status: "Backend" },
-  { id: 12, title: "Promotheus", image: "", status: "Backend" },
-  { id: 13, title: "Promotheus", image: "", status: "Backend" },
-  { id: 14, title: "Promotheus", image: "", status: "Backend" },
-  { id: 15, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 16, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 17, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 18, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 19, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 20, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 21, title: "Promotheus", image: "", status: "Frontend" },
-  { id: 22, title: "Promotheus", image: "", status: "Testing" },
-  { id: 23, title: "Promotheus", image: "", status: "Testing" },
-  { id: 24, title: "Promotheus", image: "", status: "Testing" },
-  { id: 25, title: "Promotheus", image: "", status: "Testing" },
-  { id: 26, title: "Promotheus", image: "", status: "Testing" },
-  { id: 27, title: "Promotheus", image: "", status: "Testing" },
-  { id: 28, title: "Promotheus", image: "", status: "Testing" },
-  { id: 29, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 30, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 31, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 32, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 33, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 34, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 35, title: "Promotheus", image: "", status: "UX/UI" },
-  { id: 36, title: "Promotheus", image: "", status: "Infrastructure" },
-  { id: 37, title: "Promotheus", image: "", status: "Infrastructure" },
-  { id: 38, title: "Promotheus", image: "", status: "Infrastructure" },
-  { id: 39, title: "Promotheus", image: "", status: "Infrastructure" },
-  { id: 40, title: "Promotheus", image: "", status: "Infrastructure" },
-  { id: 41, title: "Promotheus", image: "", status: "Infrastructure" },
+  { id: 25, title: "Promotheus", image: Promotheus, status: "Testing" },
+  { id: 39, title: "Promotheus", image: Unknown1, status: "Infrastructure" },
+  { id: 40, title: "Promotheus", image: Unknown2, status: "Infrastructure" },
+  { id: 15, title: "Gitlab", image: Gitlab, status: "Frontend" },
+  { id: 44, title: "Kotlin", image: Kotlin, status: "Mobile" },
   { id: 42, title: "Android", image: android, status: "Mobile" },
-  { id: 43, title: "Promotheus", image: "", status: "Mobile" },
-  { id: 44, title: "Promotheus", image: "", status: "Mobile" },
-  { id: 45, title: "Promotheus", image: "", status: "Mobile" },
-  { id: 46, title: "Promotheus", image: "", status: "Mobile" },
-  { id: 47, title: "Promotheus", image: "", status: "Mobile" },
-  { id: 48, title: "Promotheus", image: "", status: "Mobile" },
+  { id: 10, title: "Java", image: Java, status: "Backend" },
+  { id: 1, title: "Azure", image: azure, status: "Devops" },
+  { id: 22, title: "Google Cloud", image: GoogleCloud, status: "Testing" },
+  { id: 5, title: "Digital Ocean", image: DigitalOcean, status: "Devops" },
+  { id: 41, title: "Promotheus", image: Unknown3, status: "Infrastructure" },
+  { id: 4, title: "Kubernetes", image: Kubernetes, status: "Devops" },
+  { id: 35, title: "Elastic", image: Elastic, status: "Infrastructure" },
+  { id: 37, title: "Grafana", image: Grafana, status: "Infrastructure" },
+  { id: 38, title: "Terraform", image: Terraform, status: "Infrastructure" },
+  { id: 43, title: "IOS", image: Ios, status: "Mobile" },
+  { id: 45, title: "Swift", image: Swift, status: "Mobile" },
+  { id: 46, title: "Flutter", image: Flutter, status: "Mobile" },
+  { id: 17, title: "Next js", image: Next, status: "Frontend" },
+  { id: 18, title: "React js", image: React, status: "Frontend" },
+  { id: 16, title: "JS", image: Js, status: "Frontend" },
+  { id: 47, title: "Promotheus", image: Unknown4, status: "Infrastructure" },
+  {
+    id: 36,
+    title: "Infrastructure",
+    image: Unknown8,
+    status: "Infrastructure",
+  },
+  { id: 29, title: "Figma", image: figma, status: "UX/UI" },
+  { id: 2, title: "Docker", image: docker, status: "Devops" },
+  { id: 13, title: "Postgresql", image: Postgresq, status: "Backend" },
+  { id: 14, title: "Python", image: Python, status: "Backend" },
+  { id: 11, title: "Node js", image: Nodejs, status: "Backend" },
+  { id: 12, title: "php", image: php, status: "Backend" },
+  { id: 8, title: "Go", image: Go, status: "Backend" },
+  { id: 28, title: "Ant", image: Ant, status: "Frontend" },
+  { id: 23, title: "Gatsby", image: Gatsby, status: "Frontend" },
+  { id: 21, title: "Vue", image: Vue, status: "Frontend" },
+  { id: 48, title: "Promotheus", image: Unknown5, status: "Infrastructure" },
+  { id: 3, title: "Sketch", image: Sketch, status: "UX/UI" },
+  { id: 32, title: "Adobe", image: Adobe, status: "UX/UI" },
+  { id: 33, title: "Youtrack", image: Youtrack, status: "UX/UI" },
+  { id: 24, title: "Appium", image: Appium, status: "Testing" },
+  { id: 6, title: "Promotheus", image: Unknown6, status: "Infrastructure" },
+  { id: 26, title: "Promotheus", image: Unknown8, status: "Infrastructure" },
+  { id: 9, title: "MongoDB", image: MongoDB, status: "Backend" },
+  { id: 7, title: "Cassandra", image: cassandra, status: "Backend" },
+  { id: 19, title: "sass", image: sass, status: "Frontend" },
+  { id: 20, title: "MUI", image: MUI, status: "Frontend" },
+  { id: 27, title: "Promotheus", image: Unknown9, status: "Infrastructure" },
+  { id: 31, title: "Adobe Ill", image: Abdobel, status: "UX/UI" },
+  { id: 34, title: "Promotheus", image: Unknown4, status: "Infrastructure" },
+  { id: 30, title: "Photoshop", image: Photoshop, status: "UX/UI" },
+
+
 ];
 
 export const logo = [Fac, Youteb, Twwiter, InstataGram];

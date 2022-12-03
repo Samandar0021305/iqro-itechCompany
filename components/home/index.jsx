@@ -5,6 +5,7 @@ import robo from "../assets/png/homeImage.png";
 import TypedTex from "./typed";
 import { useTranslation } from "next-i18next";
 import Button from "../BaseButton/BaseButton";
+import desktop4 from "../assets/png/Desktop4.png"
 
 const HomePage = () => {
   const { t } = useTranslation();
@@ -25,7 +26,10 @@ const HomePage = () => {
           <h4 className=" text-2xl lg:text-3xl xl:text-5xl  mb-5 sm:mt-5 md:mb-5 lg:mb-8 font-semibold">
             {t("home.header")}
           </h4>
-          <h4 id="Direction" className=" text-[24px] sm:text-[24px] lg:text-3xl xl:text-5xl font-medium  mb-10 text-blue">
+          <h4
+            id="Direction"
+            className=" text-[24px] sm:text-[24px] lg:text-3xl xl:text-5xl font-medium  mb-10 text-blue"
+          >
             <TypedTex />
           </h4>
           <Button
@@ -36,7 +40,7 @@ const HomePage = () => {
             {t("button")}
           </Button>
         </div>
-        <div className="flex justify-end md:px-0 bg-[url(https://www.digitalgravity.ae/blog/wp-content/uploads/2020/08/roundtables.gif)]">
+        <div className="flex justify-end md:px-0 bg-[url(https://www.digitalgravity.ae/blog/wp-content/uploads/2020/08/roundtables.gif)] bg-no-repeat">
           <Image
             src={robo}
             alt="circle"

@@ -43,7 +43,7 @@ const Tools = () => {
                 : " w-[60px] h-[60px] sm:w-20 sm:h-20 m-auto bg-[#DCF1FC] rounded flex flex-col justify-center items-center gap-2"
             }
           >
-            <Image src={tool1} alt="tool" />
+            <Image src={item.image} alt="tool" />
             <div className=" text-[9px] sm:text-xs">{item.title}</div>
           </div>
         ))}
