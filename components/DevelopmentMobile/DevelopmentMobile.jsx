@@ -55,10 +55,10 @@ function DevelopmentMobile() {
               })}
             </ul>
           </div>
-          <div className="sm:w-[50%] ">
+          <div className="sm:w-[50%] bg-no-repeat bg-cover bg-[url(https://media.tenor.com/LMpVMsVPmVEAAAAC/mobile-application-digital-marketing.gif)]">
             <Image
               src={Img}
-              className=" sm:w-[300px] md:w-[350px] lg:w-[450px] xl:w-[500px] ml-auto rounded"
+              className=" sm:w-[300px] md:w-[350px] lg:w-[450px] xl:w-[500px] ml-auto rounded opacity-0"
               alt="image of mobile phone"
             />
           </div>
