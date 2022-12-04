@@ -7,7 +7,7 @@ const OptimizationPage = (props) => {
     const {t} = useTranslation();
     const {color, arr, desc, title, flex, image} = props.item;
     const {index} = props;
-    console.log('index', props)
+    // console.log('index', props)
     const gifLisk = {
         0: `bg-[url(https://uiuxdesignschool.in/images/workingman.gif)]`,
         1: `bg-[url(https://i.pinimg.com/originals/96/19/99/96199963430a92bf5c15349943ec90aa.gif)]`,
