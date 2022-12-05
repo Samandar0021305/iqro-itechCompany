@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import HomePage from "../components/home/index";
 import Command from "../components/command/index";
@@ -14,6 +14,9 @@ import { optimalComponents, erpSystems } from "../utils/Constants";
 import UiDesign from "../components/ui";
 import Navbar from "../components/Navbar/Navbar";
 import dynamic from 'next/dynamic'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
   ssr: false
@@ -52,6 +55,10 @@ function Home() {
     width: "70px",
     height: "30px",
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
     <>
       <AnimatedCursor
@@ -63,6 +70,7 @@ function Home() {
         outerScale={5}
 
       />
+      
       <Navbar classes={classes} background={background}
         TooglerHandler={TooglerHandler}
         toogle={toogle}

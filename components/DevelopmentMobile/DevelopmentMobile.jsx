@@ -15,17 +15,17 @@ function DevelopmentMobile() {
       <div className=" bg-white sm:bg-opacity-20  lg:bg-opacity-20 mt-[50px] sm:mt-[0] sm:pb-[60px]">
         <div className="flex flex-col-reverse sm:flex-row justify-between gap-10 mx-auto">
           <div className="w-[100%] sm:w-[50%]">
-            <p className="lg:w-11/12   sm:mt-[30px] lg:mt-[50px] xsm:text-md lg:text-[28px]  mb-5">
+            <p data-aos="fade-up-left" className="lg:w-11/12   sm:mt-[30px] lg:mt-[50px] xsm:text-md lg:text-[28px]  mb-5">
               {t("commandPage.text6")}
             </p>
             <ul className="flex justify-between items-center gap-1  mt-[30px]">
               {Development.map((post) => {
                 return (
-                  <div
+                  <div data-aos="fade-up-left"
                     key={post.id}
                     className="bg-blue flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
                   >
-                    <Image
+                    <Image data-aos="fade-up-left"
                       className=" w-[39px] md:w-[50px] lg:w-[70px]"
                       src={post.src}
                       alt=""
@@ -35,13 +35,13 @@ function DevelopmentMobile() {
                 );
               })}
             </ul>
-            <h2 className=" text-xl xsm:text-2xl lg:text-3xl font-medium sm:font-semibold mt-10 lg:mt-16">
+            <h2 data-aos="fade-up-left" className=" text-xl xsm:text-2xl lg:text-3xl font-medium sm:font-semibold mt-10 lg:mt-16">
               {t("Technologies")}
             </h2>
             <ul className="mt-[20px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
               {Dev.map((postEl, id) => {
                 return (
-                  <li key={id}>
+                  <li data-aos="fade-up-left" key={id}>
                     <Image
                       className="object-cover rounded p-2 w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  bg-blue bg-opacity-20 "
                       src={postEl.img}

@@ -17,19 +17,19 @@ const Contacts = () => {
       type: "text",
       placeholder: "input1",
       name: "name",
-      style: "sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
+      style: "sm:w-[477px] w-[278px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
     },
     {
       type: "email",
       name: "email",
       placeholder: "input2",
-      style: "sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
+      style: "sm:w-[477px] w-[278px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
     },
     {
       type: "text",
       name: "number",
       placeholder: "input3",
-      style: "sm:w-[477px] w-[300px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
+      style: "sm:w-[477px] w-[278px] pt-2 pb-2 pl-2 border-[1px]  border-blackDev mt-[20px] rounded"
     }
   ]
   let textareaElement = 'Briefly describe your project'
