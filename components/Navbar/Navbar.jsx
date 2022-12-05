@@ -9,11 +9,11 @@ import menu from "../../assets/menu.png"
 import Toogler1 from "../../assets/toogler1.png"
 
 
-export const getStaticProps = async ({ locale }) => ({
-  props: {
-    ...(await serverSideTranslations(locale, ["common"])),
-  },
-});
+// export const getStaticProps = async ({ locale }) => ({
+//   props: {
+//     ...(await serverSideTranslations(locale, ["common"])),
+//   },
+// });
 
 function Navbar() {
   // const [toogleEl,setToogleEl] = useState(false)
