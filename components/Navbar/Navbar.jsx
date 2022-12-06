@@ -8,11 +8,6 @@ import Button from "../BaseButton/BaseButton";
 import menu from "../../assets/menu.png";
 import Toogler1 from "../../assets/toogler1.png";
 
-// export const getStaticProps = async ({ locale }) => ({
-//   props: {
-//     ...(await serverSideTranslations(locale, ["common"])),
-//   },
-// });
 
 function Navbar(props) {
   const {

@@ -44,7 +44,7 @@ const Contacts = () => {
           {inputs.map((inputEl, id) => {
             return <Inputs props={inputEl} key={id} />;
           })}
-          <textarea
+          <textarea data-aos="zoom-in"
             className="w-full  xl:w-[460px] pt-2 pb-[40px] pl-3 border-[1px]  border-blackDev mt-[20px] rounded"
             placeholder={t(textareaElement)}
           />
@@ -66,7 +66,7 @@ const Contacts = () => {
               );
             })}
           </ul>
-          <span className="flex lg:mt-[0]  mt-[20px] sm:w-[120px] w-[200px]  justify-between">
+          <span data-aos="zoom-in" className="flex lg:mt-[0]  mt-[20px] sm:w-[120px] w-[200px]  justify-between">
             {logo.map((post, id) => {
               return (
                 <Image
@@ -78,7 +78,7 @@ const Contacts = () => {
               );
             })}
           </span>
-          <iframe
+          <iframe data-aos="zoom-in"
             className="lg:w-[513px] w-[100%] lg:h-[190px] mt-7"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d377.2514415613233!2d69.60091886932778!3d40.84967060000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae2d9478996ef1%3A0xd34c9a593a495cc9!2sUcell%20Olmaliq%20Filiali!5e0!3m2!1sru!2s!4v1669703570539!5m2!1sru!2s"
           ></iframe>
