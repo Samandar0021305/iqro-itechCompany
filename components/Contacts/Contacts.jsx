@@ -1,13 +1,9 @@
-
 import React from 'react'
 import Inputs from './Inputs'
 import Image from 'next/image'
 import { inputs, localization, logo } from "../../utils/Constants";
 import PageTitle from "../resuable/PageTitle";
-
 import { useTranslation } from "next-i18next";
-
-
 
 const Contacts = () => {
   const { t } = useTranslation("common");
