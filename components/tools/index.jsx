@@ -21,7 +21,7 @@ const Tools = () => {
             key={item.id}
           >
             <input
-              className=" w-4"
+              className="w-4 h-8"
               type="radio"
               value={item.label}
               name={item.name}
