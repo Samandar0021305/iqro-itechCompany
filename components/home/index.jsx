@@ -23,12 +23,16 @@ const HomePage = () => {
             />
           </div>
 
-          <h4 className=" text-2xl lg:text-3xl xl:text-5xl  mb-5 sm:mt-5 md:mb-5 lg:mb-8 font-semibold">
+          <h4
+            data-aos="fade-up-right"
+            className=" text-2xl lg:text-3xl xl:text-5xl  mb-5 sm:mt-5 md:mb-5 lg:mb-8 font-medium"
+          >
             {t("home.header")}
           </h4>
           <h4
+            data-aos="fade-up-right"
             id="Direction"
-            className=" text-[24px] sm:text-[24px] lg:text-3xl xl:text-5xl font-medium  mb-10 text-blue"
+            className=" text-[21px] sm:text-[24px] lg:text-3xl xl:text-5xl  font-normal  mb-10 text-blue"
           >
             <TypedTex />
           </h4>

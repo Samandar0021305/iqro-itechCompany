@@ -10,17 +10,18 @@ const Command = () => {
     <div className="bg-blue bg-opacity-20 relative">
       <div className="sm:flex justify-between container mx-auto px-3">
         <div className="sm:w-2/3 py-12">
-          <PageTitle id="Command" title="command" />
-          <p className="mt-40 xsm:text-md lg:text-2xl sm:mt-14 mb-8">
+
+          <PageTitle data-aos="zoom-in" id="Command" title="command" />
+          <p data-aos="zoom-in" className="mt-40 xsm:text-md lg:text-2xl sm:mt-14 mb-5">
             {t("commandPage.text")}
           </p>
-          <h4 className=" text-6xl lg:text-9xl text-blue font-bold">20+</h4>
-          <p className="m-0 p-0 mt-2 xsm:text-2xl lg:text-3xl xsm:font-medium sm:font-semibold">
+          <h4 data-aos="zoom-in" className=" text-6xl lg:text-9xl text-blue font-bold">20+</h4>
+          <p data-aos="zoom-in" className="m-0 p-0 mt-2 xsm:text-2xl lg:text-3xl xsm:font-medium sm:font-semibold">
             {t("commandPage.dedicated")}
           </p>
         </div>
         <div className="xsm:w-96 ">
-          <Image
+          <Image data-aos="zoom-in"
             src={command}
             className="hidden sm:block sm:w-[220px] lg:w-[300px] sm:ml-auto"
             alt="image of robotic "
