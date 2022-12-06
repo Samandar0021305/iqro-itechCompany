@@ -10,7 +10,8 @@ const OurClients = () => {
       <ul className="flex flex-wrap justify-between w-[100%] mt-8 sm:mt-12 gap-1 xsm:gap-2">
         {Our.map((post, id) => {
           return (
-            <li
+            <li data-aos="fade-up"
+              data-aos-duration="3000"
               className="md:w-[220px] xl:w-[200px] rounded bg-bluef p-4 md:h-[120px] w-[82px] xsm:w-[90px] h-[55px]   flex justify-center items-center "
               key={id}
             >

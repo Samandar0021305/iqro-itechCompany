@@ -25,19 +25,23 @@ function Footer() {
     <footer className='bg-blue bg-opacity-20 pt-4 pb-3'>
       <div className="container mx-auto py-5">
         <span className='w-full flex items-center justify-center'>
-          <Image src={FooterLogo} width='151' height='28' alt='navbar logo' />
+          <Image src={FooterLogo} width='151'
+            height='28' alt='navbar logo'
+            data-aos="fade-up"
+            data-aos-duration="3000" />
         </span>
 
         <div className='flex items-start justify-between flex-wrap mt-10 pl-5'>
           <div className='col-span-6  justify-center items-center    mt-4'>
             <h2 className='font-bold mb-3 md:text-2xl text-base'>{t("About_Us")}</h2>
-            <ul className='flex flex-col md:w-[250px]'>
+            <ul data-aos="fade-up"
+              data-aos-duration="3000" className='flex flex-col md:w-[250px]'>
               {
                 navTextList.map((post, id) => {
                   return (
                     <li key={id} className='text-blue md:text-[16px] text-[12px]'>
-                  <a >{t(post.text)}</a>
-                </li>
+                      <a >{t(post.text)}</a>
+                    </li>
                   )
                 })
               }
@@ -47,15 +51,17 @@ function Footer() {
 
           <div className='col-span-6 mt-4'>
             <h2 className='font-bold mb-3 text-sm md:text-2xl '>{t('Services')}</h2>
-            <ul className='md:w-96  w-auto mr-0 xl:mr-14 '>
+            <ul data-aos="fade-up"
+              data-aos-duration="3000" className='md:w-96 
+                    w-auto mr-0 xl:mr-14 '>
               {
                 footOne.map((pos, id) => {
                   return (
                     <li key={id} className='text-blue break-words w-auto md:text-base text-sm '>
-                    <a className='md:text-[16px] text-[12px]' href={pos.key}>
-                      {t(pos.text)}
-                    </a>
-                  </li>
+                      <a className='md:text-[16px] text-[12px]' href={pos.key}>
+                        {t(pos.text)}
+                      </a>
+                    </li>
                   )
                 })
               }
@@ -65,7 +71,8 @@ function Footer() {
 
           <div className='col-span-6 mt-4'>
             <h2 className='font-bold mb-3 text-sm md:text-2xl'>{t('Portfolio')}</h2>
-            <ul>
+            <ul data-aos="fade-up"
+              data-aos-duration="3000">
               <li className='text-blue md:text-[16px] text-[12px]'>
                 <a href="">
                   {t('Barber_shop')}
@@ -86,7 +93,8 @@ function Footer() {
             <h3 className='text-blue  text-center '>© 2022 “Iqro Agency” LTD. All rights reserved</h3>
           </div>
           <div className='col-span-6 mt-3'>
-            <ul className='flex  items-center'>
+            <ul data-aos="fade-up"
+              data-aos-duration="3000" className='flex  items-center'>
               {
                 imageList.map((img, index) => {
                   return (
