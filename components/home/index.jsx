@@ -10,7 +10,7 @@ import desktop4 from "../assets/png/Desktop4.png";
 const HomePage = () => {
   const { t } = useTranslation();
   return (
-    <div className="container mx-auto">
+    <div className="container  pl-2 mx-auto py-5">
       <div className="sm:flex justify-center px-3 items-center text-center pb/-3 sm:py-16 ">
         <div className=" mb-15  sm:text-left sm:w-2/3 md:px-0">
           <div className="flex justify-center sm:justify-start ">
@@ -47,9 +47,7 @@ const HomePage = () => {
           <Image
             src={robo}
             alt="circle"
-            className="sm:w-[400px] md:w-[500px] xl:w-[600px]"
-            width={500}
-            height={577}
+            className=" w-[90%] md:w-[500px] xl:w-[600px]"
           />
         </div>
       </div>

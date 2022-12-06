@@ -8,7 +8,7 @@ const Command = () => {
   const { t } = useTranslation();
   return (
     <div className="bg-blue bg-opacity-20 relative">
-      <div className="sm:flex justify-between container mx-auto px-3">
+      <div className="sm:flex justify-between container  pl-2 mx-auto py-5">
         <div className="sm:w-2/3 py-12">
 
           <PageTitle data-aos="zoom-in" id="Command" title="command" />

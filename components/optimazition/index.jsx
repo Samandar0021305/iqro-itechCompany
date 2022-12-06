@@ -16,7 +16,7 @@ const OptimizationPage = (props) => {
     }
     return (
         <div className={`bg-${color} bg-opacity-20 relative `}>
-            <div className="container mx-auto py-[40px] px-3  sm:py-[60px]">
+            <div className="container  pl-2 mx-auto py-5  px-3  sm:py-[60px]">
                 <PageTitle data-aos="flip-left"  id='Portfolio' title={title}/>
                 <div
                     className={`sm:flex ${flex} justify-between  gap-5  sm:my-[40px] md:my-[20px] `}
