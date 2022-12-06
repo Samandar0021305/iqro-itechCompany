@@ -8,7 +8,6 @@ import Button from "../BaseButton/BaseButton";
 import menu from "../../assets/menu.png";
 import Toogler1 from "../../assets/toogler1.png";
 
-
 function Navbar(props) {
   const {
     classes,
@@ -55,7 +54,7 @@ function Navbar(props) {
             <li>
               <select
                 onChange={handleLocaleChange}
-                className="text-gray-600 bg-[#fff] mr-6"
+                className="text-gray-600 w-24 align-middle text-center outline-none bg-[#fff] mr-6 "
                 value={router.locale}
               >
                 <option value="ru">RUS</option>

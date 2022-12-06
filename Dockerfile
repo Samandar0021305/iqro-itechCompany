@@ -12,8 +12,8 @@ RUN npm install --force i18next
 
 RUN npm install --force react-i18next
 
-ENV PORT 3003
+ENV PORT 4001
 
-EXPOSE 3003
+EXPOSE 4001
 
-CMD ["npm", "dev"]
+CMD ["npm", "run", "dev"]

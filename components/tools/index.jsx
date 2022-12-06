@@ -16,7 +16,8 @@ const Tools = () => {
       <PageTitle id="Tools" title="tools" />
       <div className="flex gap-5 sm:gap-10 flex-wrap mt-10 sm:mt-14 ">
         {radioButtons.map((item) => (
-          <div data-aos="fade-up-right"
+          <div
+            data-aos="fade-up-right"
             className="flex items-center justify-center  gap-2 font-medium text-[18px] sm:text-[21px] "
             key={item.id}
           >
@@ -35,7 +36,8 @@ const Tools = () => {
 
       <div className="flex flex-wrap gap-[10px] sm:gap-[25px] mt-10 sm:mt-16">
         {tools.map((item) => (
-          <div data-aos="flip-left"
+          <div
+            // data-aos="flip-right"
             key={item.id}
             className={
               item.status == value[`${item.status}`]
