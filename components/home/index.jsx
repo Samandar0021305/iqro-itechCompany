@@ -39,11 +39,11 @@ const HomePage = () => {
             {t("button")}
           </Button>
         </div>
-        <div className="flex justify-end md:px-0 bg-[url(https://www.digitalgravity.ae/blog/wp-content/uploads/2020/08/roundtables.gif)] ">
+        <div className="flex justify-end md:px-0 ">
           <Image
             src={robo}
             alt="circle"
-            className="sm:w-[400px] md:w-[500px] xl:w-[600px] opacity-0 "
+            className="sm:w-[400px] md:w-[500px] xl:w-[600px]"
             width={500}
             height={577}
           />
