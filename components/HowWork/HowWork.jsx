@@ -10,7 +10,8 @@ const HowWork = () => {
   return (
     <div className='container px-3 mx-auto py-12'>
       <PageTitle title="how we work"/>
-      <ul className="flex  break-after-auto   md:justify-between justify-start flex-col items-start md:flex-row mt-5 md:mt-16 ">
+      <ul className="flex  break-after-auto   md:justify-between justify-start flex-col items-start
+       md:flex-row mt-5 md:mt-16 ">
         {
           WorkedList.map((post, id) => {
             return (
