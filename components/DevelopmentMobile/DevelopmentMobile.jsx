@@ -22,7 +22,9 @@ function DevelopmentMobile() {
                 return (
                   <div
                     key={post.id}
-                    className="bg-blue flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
+                    className="bg-blue hover:shadow-xl transition-shadow	 flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start 
+                    justify-center text-[10px] sm:text-[12px] xl:text-[21px]
+                     lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
                   >
                     <Image
                       className=" w-[39px] md:w-[50px] lg:w-[70px]"
@@ -40,9 +42,9 @@ function DevelopmentMobile() {
             <ul className="mt-[20px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
               {Dev.map((postEl, id) => {
                 return (
-                  <li key={id}>
+                  <li key={id} >
                     <Image
-                      className="object-cover rounded p-2 w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  bg-blue bg-opacity-20 "
+                      className="object-cover hover:shadow-xl transition-shadow rounded p-2 w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  bg-blue bg-opacity-20 "
                       src={postEl.img}
                       alt=""
                     />

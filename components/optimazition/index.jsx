@@ -23,11 +23,11 @@ const OptimizationPage = (props) => {
                 >
                     <div className=" flex flex-col md:w-1/2  lg:w-5/12">
                         <div
-                            className={`flex justify-center bg-no-repeat bg-cover ${gifLisk[index]} `}>
-                            <Image data-aos="flip-left"
+                            className={`flex justify-center w-full h-full bg-no-repeat  bg-cover bg-[url(https://uiuxdesignschool.in/images/workingman.gif) `}>
+                            <Image 
                                 src={image}
                                 alt="image of computer"
-                                className="mt-14 md:w-full lg:w-[599px] lg:mt-28 opacity-0"
+                                className="mt-14   md:w-full lg:w-[599px] lg:mt-28 opacity-0"
                             />
                             <div className="mt-14 md:w-full lg:w-[599px] lg:mt-28">
 
@@ -42,7 +42,9 @@ const OptimizationPage = (props) => {
                             {arr.length && arr.map((item, index) => (
                                 <div data-aos="flip-left"
                                     key={index}
-                                    className="bg-blue flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
+                                    className="bg-blue hover:shadow-xl transition-shadow flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 i
+                                    tems-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20
+                                     rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
                                 >
                                     <Image data-aos="flip-left"
                                         className=" w-[39px] md:w-[50px] lg:w-[70px]"

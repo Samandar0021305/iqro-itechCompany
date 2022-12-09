@@ -63,9 +63,9 @@ function Home() {
   return (
     <>
       <AnimatedCursor
-        innerSize={14}
-        outerSize={14}
-        color='193, 11, 111'
+        innerSize={16}
+        outerSize={16}
+        color='161,196,253'
         outerAlpha={0.2}
         innerScale={0.7}
         outerScale={5}

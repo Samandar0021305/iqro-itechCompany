@@ -20,7 +20,7 @@ const UiDesign = () => {
                 return (
                   <li data-aos="zoom-in"
                     key={id}
-                    className="bg-blue flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
+                    className="bg-blue hover:shadow-xl transition-shadow flex flex-col gap-1 md:gap-2 pl-2 lg:pl-6 items-start justify-center text-[10px] sm:text-[12px] xl:text-[21px] lg:m-0 bg-opacity-20 rounded  w-[90px] h-20 md:w-28 md:h-24 lg:w-36 lg:h-32 xl:w-[190px] xl:h-[160px]"
                   >
                     <Image data-aos="zoom-in"
                       className=" w-[39px] md:w-[50px] lg:w-[70px]"
@@ -35,14 +35,10 @@ const UiDesign = () => {
             <h2 data-aos="zoom-in" className=" text-xl xsm:text-2xl lg:text-3xl font-medium sm:font-semibold mt-10 lg:mt-16">
               {t("Technologies")}
             </h2>
-{/* <<<<<<< HEAD
-            <ul className="mt-[15px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
-              {Dev12.map((postEl, id) => {
-======= */}
             <ul className="mt-[20px] sm:mt-[30px] flex w-[80%] sm:w-[50%] justify-start gap-3">
               {ui.map((postEl, id) => {
                 return (
-                  <li key={id}>
+                  <li key={id} >
                     <Image data-aos="zoom-in"
                       className="object-cover rounded p-2 w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]  bg-blue bg-opacity-20 "
                       src={postEl.img}
